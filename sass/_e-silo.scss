@@ -65,6 +65,11 @@ section.e-silo {
             height: 100%;
             top: 0;
             left: 0;
+            overflow: hidden;
+
+            video {
+                width: 100%;
+            }
         }
 
         .section-default_text {

@@ -26,3 +26,27 @@
             transform: translateY(0);
   }
 }
+
+@keyframes zoom-mobile {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes zoom-desktop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}

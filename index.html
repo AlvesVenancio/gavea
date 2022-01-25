@@ -65,21 +65,17 @@
                                             <img class="en" src="./images/en.png" alt="">
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                            <li>
-                                                <a class="en dropdown-item nav-link" href="#" onclick="$('html').attr('lang', 'pt-br');">
-                                                    <figure>                                                        
-                                                        <img src="./images/pt-br.png" alt="">
-                                                        <figcaption>pt-br</figcaption>
-                                                    </figure>
-                                                </a>
+                                            <li class="en dropdown-item nav-link" onclick="$('html').attr('lang', 'pt-br');">
+                                                <figure>                                                        
+                                                    <img src="./images/pt-br.png" alt="">
+                                                    <figcaption>pt-br</figcaption>
+                                                </figure>
                                             </li>
-                                            <li>
-                                                <a class="pt-br dropdown-item nav-link" href="#" onclick="$('html').attr('lang', 'en');">
-                                                    <figure>                                                        
-                                                        <img src="./images/en.png" alt="">
-                                                        <figcaption>en</figcaption>
-                                                    </figure>
-                                                </a>
+                                            <li class="pt-br dropdown-item nav-link" onclick="$('html').attr('lang', 'en');">
+                                                <figure>                                                        
+                                                    <img src="./images/en.png" alt="">
+                                                    <figcaption>en</figcaption>
+                                                </figure>
                                             </li>
                                         </ul>
                                     </li>
@@ -313,7 +309,7 @@
                         <span
                             class="timer count-title count-number"
                             data-to="100"
-                            data-speed="2500"
+                            data-speed="1200"
                         >
                         </span>
                     </h6>
@@ -325,7 +321,7 @@
                         <span
                             class="timer count-title count-number"
                             data-to="70"
-                            data-speed="2500"
+                            data-speed="1200"
                         >
                         </span>
                         M
@@ -338,7 +334,7 @@
                         <span
                             class="timer count-title count-number"
                             data-to="20"
-                            data-speed="2500"
+                            data-speed="1200"
                         >
                         </span>
                     </h6>
@@ -350,7 +346,7 @@
                         <span
                             class="timer count-title count-number"
                             data-to="70"
-                            data-speed="2500"                            
+                            data-speed="1200"                            
                         >
                         </span>
                     </h6>
@@ -363,6 +359,8 @@
     <section class="e-silo" id="e-silo">
         <div class="row sustainability">
             <div class="video">
+                <video class="en" autoplay loop src="./videos/gavea_video_eng.mp4"></video>
+                <video class="pt-br" autoplay loop src="./videos/gavea_video_port.mp4"></video>
             </div>
             <div class="row section-container">
                 <div class="section-default_text col-12">
@@ -374,7 +372,7 @@
             </div>        
         </div>
         <div class="row row-esilo section-container">
-            <div class="e-silo-img col-12 col-md-6">
+            <div class="e-silo-img col-12 col-md-6" data-aos="fade-right" data-aos-delay="100">
                 <div id="scene_e-silo">
                     <img src="./images/dots-blue-white.svg" alt="" class="img-fluid" data-depth="1.2">
                 </div>
@@ -431,10 +429,6 @@
 
     <section class="hero_bottom">
         <div class="bg"></div>
-        <div id="scene_hero-bottom">
-            <img src="./images/hero-parallax/dots-left.svg" alt="" class="dots-right" data-depth=".5">
-            <img src="./images/hero-parallax/waves_hero-bottom.svg" alt="" class="waves-left" data-depth=".05">
-        </div>
         <div class="container">
             <div class="row">
                 <div class="col-12">

@@ -17,17 +17,6 @@ section.hero {
     }
 
     .bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-position: 80%;
-        transition: transform 15s linear;
-        transform: scale(1.1);
-        background-color: $color-gray1;
-
         &[data-bg="1"] {
             background-image: var(--bg-hero-1);
         }
@@ -58,11 +47,24 @@ section.hero {
         &[data-bg="10"] {
             background-image: var(--bg-hero-10);
         }
+    }
+
+    .bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: 80%;
+        background-color: $color-gray1;
+        animation: zoom-mobile 55s linear;
+        transform: scale(1.2);
         
         @media (min-width: 1280px) {
             background-position: right;
-            transition: transform 25s linear;
-            transform: scale(1.1);
+            animation: zoom-desktop 55s linear;
+            transform: scale(1.3);
         }
 
         &::before {

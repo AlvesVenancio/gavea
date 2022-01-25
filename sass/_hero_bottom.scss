@@ -18,25 +18,28 @@ section.hero_bottom {
         height: 100%;
         background-size: cover;
         background-position: 80%;
-        transition: transform 15s linear;
-        transform: scale(1.1);
         background-color: $color-gray1;
-        background-image: url('../images/bg-hero-footer.png');
+        background-image: url('../images/hero-bottom/320.png');
+        
+        @media (min-width: 768px) {
+            background-image: url('../images/hero-bottom/768.png');
+        }
         
         @media (min-width: 1280px) {
+            background-image: url('../images/hero-bottom/1280.png');
             background-position: right;
-            transition: transform 25s linear;
-            transform: scale(1.1);
+        }
+        
+        @media (min-width: 1366px) {
+            background-image: url('../images/hero-bottom/1366.png');
         }
 
-        &::after {
-            content: '';
-            width: 100vw;
-            height: 100vh;
-            background-color: #00000033;
-            position: absolute;
-            top: 0;
-            left: 0;
+        @media (min-width: 1536px) {
+            background-image: url('../images/hero-bottom/1536.png');
+        }
+
+        @media (min-width: 1850px) {
+            background-image: url('../images/hero-bottom/1850.png');
         }
     }
 
