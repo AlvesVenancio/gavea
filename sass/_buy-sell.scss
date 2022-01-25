@@ -3,7 +3,7 @@ section.buy-sell {
     position: relative;
     overflow: hidden;
     @media (min-width: 1850px) {
-        background-image: url('https://dev1.riomarca.com/clientes/gavea/images/buy-sell.png');
+        background-image: url('../images/buy-sell.png');
         background-size: 50% 60rem;
         background-repeat: no-repeat;
         background-position: right top;
@@ -18,7 +18,7 @@ section.buy-sell {
         
         min-height: 46rem;
         
-        background-image: url('https://dev1.riomarca.com/clientes/gavea/images/buy-sell.png');
+        background-image: url('../images/buy-sell.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -88,7 +88,7 @@ section.buy-sell {
         @media (min-width: 768px) {
             
             height: 26rem;
-            background-image: url('https://dev1.riomarca.com/clientes/gavea/images/buy_sell_bottom.png');
+            background-image: url('../images/buy_sell_bottom.png');
             background-repeat: no-repeat;
             background-size: 40vw;
             background-position: 10vw top;

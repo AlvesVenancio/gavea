@@ -21,7 +21,7 @@ section.hero_bottom {
         transition: transform 15s linear;
         transform: scale(1.1);
         background-color: $color-gray1;
-        background-image: var(--bg-hero-2);
+        background-image: url('../images/bg-hero-footer.png');
         
         @media (min-width: 1280px) {
             background-position: right;

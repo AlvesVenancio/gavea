@@ -98,13 +98,6 @@
 
     <section class="hero">
         <div class="bg" data-bg="0" data-bg-limit="4"></div>
-        <div id="scene">
-            <img src="./images/hero-parallax/dots.svg" alt="" class="dots-right" data-depth=".5">
-            <img src="./images/hero-parallax/dots.svg" alt="" class="dots-left d-xl-none" data-depth=".8">
-            <img src="./images/hero-parallax/dots-left.svg" alt="" class="dots-left d-none d-xl-block" data-depth=".8">
-            <img src="./images/hero-parallax/waves-right.svg" alt="" class="waves-right" data-depth=".1">
-            <img src="./images/hero-parallax/waves-left.svg" alt="" class="waves-left" data-depth=".1">
-        </div>
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -838,69 +831,6 @@
                 let bgHeroLimit = bgHero.data('bg-limit');
                 let bgHeroNumber = getRandomIntInclusive(1, bgHeroLimit);
                 bgHero.attr('data-bg', bgHeroNumber);
-
-                //parallax effect
-                var scene = document.getElementById('scene');
-                var parallaxInstance = new Parallax(scene, {
-                    relativeInput: true,
-                    hoverOnly: true
-                });
-
-                //parallax effect 2
-                var scene = document.getElementById('scene2');
-                var parallaxInstance = new Parallax(scene, {
-                    relativeInput: true,
-                    hoverOnly: true
-                });
-
-                //parallax effect 3
-                var scene = document.getElementById('scene3');
-                var parallaxInstance = new Parallax(scene, {
-                    relativeInput: true,
-                    hoverOnly: true
-                });
-
-                //parallax effect 4
-                var scene = document.getElementById('scene4');
-                var parallaxInstance = new Parallax(scene, {
-                    relativeInput: true,
-                    hoverOnly: true
-                });
-
-                //parallax effect 5
-                var scene = document.getElementById('scene_hero-bottom');
-                var parallaxInstance = new Parallax(scene, {
-                    relativeInput: true,
-                    hoverOnly: true
-                });
-
-                //parallax effect 6
-                var scene = document.getElementById('scene_broker');
-                var parallaxInstance = new Parallax(scene, {
-                    relativeInput: true,
-                    hoverOnly: true
-                });
-
-                //parallax effect 7
-                var scene = document.getElementById('scene_e-silo');
-                var parallaxInstance = new Parallax(scene, {
-                    relativeInput: true,
-                    hoverOnly: true
-                });
-
-                //parallax effect 8
-                var scene = document.getElementById('scene_e-silo_text');
-                var parallaxInstance = new Parallax(scene, {
-                    relativeInput: true,
-                    hoverOnly: true
-                });
-
-                //parallax effect 9
-                var scene = document.getElementById('scene9');
-                var parallaxInstance = new Parallax(scene, {
-                    relativeInput: true,
-                    hoverOnly: true
-                });
 
                 //partners carousel            
                 $('.owl-partners_carousel').owlCarousel({

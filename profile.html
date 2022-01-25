@@ -654,25 +654,12 @@
 
     <!-- ONLY IN PROFILE PAGE -->
         <script>
-            //target link's to especific's slides functionalities
+            //target link's to especific's slides-functionalities
             function goSlide(slide) {
                 $('.owl-functionalities_carousel').trigger('to.owl.carousel', slide);
             }
             $( document ).ready(function() {
 
-
-                //parallax effect
-                var scene = document.getElementById('scene-page');
-                var parallaxInstance = new Parallax(scene, {
-                    relativeInput: true,
-                    hoverOnly: true
-                });
-                //parallax effect home-broker
-                var scene = document.getElementById('scene_broker');
-                var parallaxInstance = new Parallax(scene, {
-                    relativeInput: true,
-                    hoverOnly: true
-                });
                 //partners carousel
                 $('.owl-partners_carousel').owlCarousel({
                     loop: true,
