@@ -19,27 +19,27 @@ section.hero_bottom {
         background-size: cover;
         background-position: 80%;
         background-color: $color-gray1;
-        background-image: url('../images/hero-bottom/320.png');
+        background-image: url('https://dev1.riomarca.com/clientes/gavea/images/hero-bottom/320.png');
         
         @media (min-width: 768px) {
-            background-image: url('../images/hero-bottom/768.png');
+            background-image: url('https://dev1.riomarca.com/clientes/gavea/images/hero-bottom/768.png');
         }
         
         @media (min-width: 1280px) {
-            background-image: url('../images/hero-bottom/1280.png');
+            background-image: url('https://dev1.riomarca.com/clientes/gavea/images/hero-bottom/1280.png');
             background-position: right;
         }
         
         @media (min-width: 1366px) {
-            background-image: url('../images/hero-bottom/1366.png');
+            background-image: url('https://dev1.riomarca.com/clientes/gavea/images/hero-bottom/1366.png');
         }
 
         @media (min-width: 1536px) {
-            background-image: url('../images/hero-bottom/1536.png');
+            background-image: url('https://dev1.riomarca.com/clientes/gavea/images/hero-bottom/1536.png');
         }
 
         @media (min-width: 1850px) {
-            background-image: url('../images/hero-bottom/1850.png');
+            background-image: url('https://dev1.riomarca.com/clientes/gavea/images/hero-bottom/1850.png');
         }
     }
 

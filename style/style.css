@@ -579,7 +579,7 @@ section.page #scene-page .waves-right {
   position: absolute;
   left: 0;
   top: 0;
-  background-image: url("../images/logo-gavea-blue.png");
+  background-image: url("https://dev1.riomarca.com/clientes/gavea/images/logo-gavea-blue.png");
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: calc(var(--bs-gutter-x) * .5) top;
@@ -1049,7 +1049,7 @@ section.page #scene-page .waves-right {
   top: 0;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-image: url("../images/sociais/youtube.svg");
+  background-image: url("https://dev1.riomarca.com/clientes/gavea/images/sociais/youtube.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 2.3rem;
@@ -1068,7 +1068,7 @@ section.page #scene-page .waves-right {
   top: 0;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-image: url("../images/sociais/medium.svg");
+  background-image: url("https://dev1.riomarca.com/clientes/gavea/images/sociais/medium.svg");
   background-position: left center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1089,7 +1089,7 @@ section.page #scene-page .waves-right {
   top: 0;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-image: url("../images/sociais/instagram.svg");
+  background-image: url("https://dev1.riomarca.com/clientes/gavea/images/sociais/instagram.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1199,7 +1199,7 @@ section.page #scene-page .waves-right {
 }
 
 .main-footer .links-mobile .accordion .accordion-item .accordion-header button::after {
-  background-image: url("../images/down_arrow.svg") !important;
+  background-image: url("https://dev1.riomarca.com/clientes/gavea/images/down_arrow.svg") !important;
 }
 
 .main-footer .selo_autendicacao {
@@ -2299,7 +2299,7 @@ section.conversation .section-container {
 
 @media (min-width: 1850px) {
   section.conversation {
-    background-image: url("../images/conversation-people.png");
+    background-image: url("https://dev1.riomarca.com/clientes/gavea/images/conversation-people.png");
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: left;
@@ -2307,7 +2307,7 @@ section.conversation .section-container {
 }
 
 section.conversation .conversation-img {
-  background-image: url("../images/conversation-people.png");
+  background-image: url("https://dev1.riomarca.com/clientes/gavea/images/conversation-people.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -2540,7 +2540,7 @@ section.buy-sell {
 
 @media (min-width: 1850px) {
   section.buy-sell {
-    background-image: url("../images/buy-sell.png");
+    background-image: url("https://dev1.riomarca.com/clientes/gavea/images/buy-sell.png");
     background-size: 50% 60rem;
     background-repeat: no-repeat;
     background-position: right top;
@@ -2554,7 +2554,7 @@ section.buy-sell .section-container {
 
 section.buy-sell .buy-sell_img {
   min-height: 46rem;
-  background-image: url("../images/buy-sell.png");
+  background-image: url("https://dev1.riomarca.com/clientes/gavea/images/buy-sell.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2637,7 +2637,7 @@ section.buy-sell .section-default_text {
 @media (min-width: 768px) {
   section.buy-sell .buy-sell_pattern {
     height: 26rem;
-    background-image: url("../images/buy_sell_bottom.png");
+    background-image: url("https://dev1.riomarca.com/clientes/gavea/images/buy_sell_bottom.png");
     background-repeat: no-repeat;
     background-size: 40vw;
     background-position: 10vw top;
@@ -2948,7 +2948,7 @@ section.e-silo .sustainability {
 @media (min-width: 768px) {
   section.e-silo .sustainability {
     min-height: 43rem;
-    background-image: url("../images/gavea word-map.png"), url("../images/gavea-word-map_slices.png");
+    background-image: url("https://dev1.riomarca.com/clientes/gavea/images/gavea word-map.png"), url("https://dev1.riomarca.com/clientes/gavea/images/gavea-word-map_slices.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -3451,37 +3451,37 @@ section.hero_bottom .bg {
   background-size: cover;
   background-position: 80%;
   background-color: #47595F;
-  background-image: url("../images/hero-bottom/320.png");
+  background-image: url("https://dev1.riomarca.com/clientes/gavea/images/hero-bottom/320.png");
 }
 
 @media (min-width: 768px) {
   section.hero_bottom .bg {
-    background-image: url("../images/hero-bottom/768.png");
+    background-image: url("https://dev1.riomarca.com/clientes/gavea/images/hero-bottom/768.png");
   }
 }
 
 @media (min-width: 1280px) {
   section.hero_bottom .bg {
-    background-image: url("../images/hero-bottom/1280.png");
+    background-image: url("https://dev1.riomarca.com/clientes/gavea/images/hero-bottom/1280.png");
     background-position: right;
   }
 }
 
 @media (min-width: 1366px) {
   section.hero_bottom .bg {
-    background-image: url("../images/hero-bottom/1366.png");
+    background-image: url("https://dev1.riomarca.com/clientes/gavea/images/hero-bottom/1366.png");
   }
 }
 
 @media (min-width: 1536px) {
   section.hero_bottom .bg {
-    background-image: url("../images/hero-bottom/1536.png");
+    background-image: url("https://dev1.riomarca.com/clientes/gavea/images/hero-bottom/1536.png");
   }
 }
 
 @media (min-width: 1850px) {
   section.hero_bottom .bg {
-    background-image: url("../images/hero-bottom/1850.png");
+    background-image: url("https://dev1.riomarca.com/clientes/gavea/images/hero-bottom/1850.png");
   }
 }
 
@@ -3790,7 +3790,7 @@ section.contact form select {
   /* Safari and Chrome */
   appearance: none !important;
   background: transparent;
-  background-image: url("../images/select-arrow.svg");
+  background-image: url("https://dev1.riomarca.com/clientes/gavea/images/select-arrow.svg");
   background-repeat: no-repeat;
   background-position-x: calc(100% - 2rem);
   background-position-y: 50%;
@@ -3848,7 +3848,7 @@ section.contact ul.sociais li i.fa-youtube::before {
   height: 1.6rem;
   position: absolute;
   left: -.1rem;
-  background-image: url("../images/sociais/youtube.svg");
+  background-image: url("https://dev1.riomarca.com/clientes/gavea/images/sociais/youtube.svg");
   background-position: left;
   background-repeat: no-repeat;
   background-size: 2rem;
@@ -3867,7 +3867,7 @@ section.contact ul.sociais li i.fa-medium-m::before {
   height: 1.8rem;
   position: absolute;
   left: -.1rem;
-  background-image: url("../images/sociais/medium-gray.svg");
+  background-image: url("https://dev1.riomarca.com/clientes/gavea/images/sociais/medium-gray.svg");
   background-position: left;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -3886,7 +3886,7 @@ section.contact ul.sociais li i.fa-instagram::before {
   height: 2rem;
   position: absolute;
   left: -.1rem;
-  background-image: url("../images/sociais/instagram.svg");
+  background-image: url("https://dev1.riomarca.com/clientes/gavea/images/sociais/instagram.svg");
   background-position: left;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -4606,7 +4606,7 @@ section.inovation-team-pillars section.pillars #scene-pillars .img {
 section.inovation-team-pillars section.pillars #scene-pillars .dots-left {
   width: 28rem;
   height: 100%;
-  background-image: url("../images/dots-blue-white.svg");
+  background-image: url("https://dev1.riomarca.com/clientes/gavea/images/dots-blue-white.svg");
   background-size: 100%;
   background-repeat: repeat-y;
   left: -18rem !important;
@@ -4798,7 +4798,7 @@ section.hero_careers .bg {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   background-color: #47595F;
-  background-image: url("../images/bg-hero-careers.png");
+  background-image: url("https://dev1.riomarca.com/clientes/gavea/images/bg-hero-careers.png");
 }
 
 @media (min-width: 1280px) {

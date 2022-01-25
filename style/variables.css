@@ -1,12 +1,12 @@
 :root {
-    --bg-hero-1: url('../images/bg-hero-1.png');
-    --bg-hero-2: url('../images/bg-hero-2.png');
-    --bg-hero-3: url('../images/bg-hero-3.png');
-    --bg-hero-4: url('../images/bg-hero-4.png');
-    --bg-hero-5: url('../images/bg-hero-5.png');
-    --bg-hero-6: url('../images/bg-hero-6.png');
-    --bg-hero-7: url('../images/bg-hero-7.png');
-    --bg-hero-8: url('../images/bg-hero-8.png');
-    --bg-hero-9: url('../images/bg-hero-9.png');
-    --bg-hero-10: url('../images/bg-hero-10.png');
+    --bg-hero-1: url('https://dev1.riomarca.com/clientes/gavea/images/bg-hero-1.png');
+    --bg-hero-2: url('https://dev1.riomarca.com/clientes/gavea/images/bg-hero-2.png');
+    --bg-hero-3: url('https://dev1.riomarca.com/clientes/gavea/images/bg-hero-3.png');
+    --bg-hero-4: url('https://dev1.riomarca.com/clientes/gavea/images/bg-hero-4.png');
+    --bg-hero-5: url('https://dev1.riomarca.com/clientes/gavea/images/bg-hero-5.png');
+    --bg-hero-6: url('https://dev1.riomarca.com/clientes/gavea/images/bg-hero-6.png');
+    --bg-hero-7: url('https://dev1.riomarca.com/clientes/gavea/images/bg-hero-7.png');
+    --bg-hero-8: url('https://dev1.riomarca.com/clientes/gavea/images/bg-hero-8.png');
+    --bg-hero-9: url('https://dev1.riomarca.com/clientes/gavea/images/bg-hero-9.png');
+    --bg-hero-10: url('https://dev1.riomarca.com/clientes/gavea/images/bg-hero-10.png');
 }
