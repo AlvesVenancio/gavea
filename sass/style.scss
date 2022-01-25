@@ -1,0 +1,26 @@
+@import 'animations';
+@import 'variables';
+@import 'mixins';
+
+@import 'geral';
+@import 'header';
+@import 'footer';
+
+//Home Page
+@import 'hero';
+@import 'home-broker';
+@import 'who-is';
+@import 'partners';
+@import 'marketing-map';
+@import 'conversation';
+@import 'buy-sell';
+@import 'e-silo';
+@import 'buyers_sellers';
+@import 'hero_bottom';
+
+//Others Pages
+@import 'contact';
+@import 'equip';
+@import 'careers';
+@import 'download';
+@import 'profile';

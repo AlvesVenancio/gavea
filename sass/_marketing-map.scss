@@ -1,0 +1,137 @@
+.marketing-map {
+
+    overflow-x: hidden;
+    margin-bottom: 6rem;
+    
+    @media (min-width: 1850px) {
+        overflow-x: initial;
+    }
+
+    .marketing-img {
+        
+        margin-bottom: 5rem;
+        position: relative;
+        padding-top: 4rem;
+        
+        @media (min-width: 768px) {
+            padding-top: 4rem;
+        }
+        
+        @media (min-width: 1280px) {
+            padding-top: 4rem;
+        }
+        
+        @media (min-width: 1400px) {
+            padding-top: 4rem;
+        }
+        
+        @media (min-width: 1850px) {
+            padding-top: 7rem;
+        }
+        
+        &::after {
+            content: '';
+            height: 90%;
+            width: 100vw;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -9;
+            background-color: #F5F8FA;
+            
+            @media (min-width: 768px) {
+                width: 50vw;
+                transform: translateX(0);
+                left: 12rem;
+            }
+            
+            @media (min-width: 1280px) {
+                left: 15rem;
+            }
+            
+            @media (min-width: 1400px) {
+                width: 62vw;
+                left: 18rem;
+            }
+
+            @media (min-width: 1850px) {
+                left: 25rem;
+            }
+
+
+        }
+        
+        @media (min-width: 768px) {
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+        
+        @media (min-width: 1536px) {
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+        
+        img {
+            max-width: 100%;
+            z-index: 9;
+            margin: 0 auto;
+            
+            @media (min-width: 768px) {
+                margin: 0;
+                max-width: 33rem;
+            }
+
+            @media (min-width: 1280px) {
+                max-width: 65rem;
+            }
+
+            @media (min-width: 1400px) {
+                max-width: 80rem;
+            }
+            
+            @media (min-width: 1850px) {
+                margin-left: -8rem;
+                max-width: 120rem;
+            }
+        }
+    }
+
+    .section-default_text {
+        
+        h2 {
+
+            max-width: 30rem;
+            margin-left: auto;
+            margin-right: auto;
+            
+            @media (min-width: 768px) {
+                max-width: 26rem;
+                margin-left: 0;
+                margin-right: 0;
+            }
+    
+            @media (min-width: 1366px) {
+                max-width: 35rem;
+            }
+    
+            @media (min-width: 1850px) {
+                max-width: 60rem;
+            }
+        }
+        
+        p {
+            @media (min-width: 768px) {
+                max-width: 32rem;
+            }
+    
+            @media (min-width: 1280px) {
+                max-width: 41.5rem;
+            }
+    
+            @media (min-width: 1850px) {
+                max-width: 43rem;
+            }
+        }
+    }
+}

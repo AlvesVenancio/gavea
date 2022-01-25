@@ -1,0 +1,144 @@
+section.equip {
+
+    padding-bottom: 9rem;
+    
+    @media (min-width: 1280px) {
+        padding-bottom: 16rem;
+    }
+
+    @media (min-width: 1366px) {
+        padding-bottom: 18rem;
+    }
+
+    @media (min-width: 1536px) {
+        padding-bottom: 25rem;
+    }
+
+    @media (min-width: 1850px) {
+        padding-bottom: 31.5rem;
+    }
+
+    @media (max-width: 500px) {
+        .container {
+            padding: 0 4rem;
+        }
+    }
+
+    .row.page-title {
+
+        @media (min-width: 768px) {
+            padding-bottom: 10rem;
+        }
+
+        p {
+            
+            margin: 0 auto;
+
+            @media (min-width: 768px) {
+                font-size: 2rem;
+                max-width: 85rem;
+            }
+
+            @media (min-width: 1536px) {
+                font-size: 2.5rem;
+                max-width: 95rem;
+            }
+        }
+    }
+    
+    p {
+        font-weight: 300;
+    }
+
+    .members {
+        padding-top: 4rem;
+        gap: 6.3rem;
+
+        @media (min-width: 768px) {
+            gap: 0;
+        }
+    }
+
+    .member {
+
+        max-width: 29rem;
+        margin: 0 auto;
+
+        @media (min-width: 768px) {
+            max-width: initial;
+            padding: 0 2rem;
+        }
+
+        @media (min-width: 1024px) {
+            padding: 0 3rem;
+        }
+
+        @media (min-width: 1280px) {
+            padding: 0 4rem;
+        }
+
+        *{
+            text-align: left;
+        }
+
+        .photo {
+            
+            position: relative;
+            margin-bottom: 2rem;
+
+            img {
+                width: 100%;
+            }
+
+            .scene-members {
+                
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -9;
+
+                img {
+                    position: absolute !important;
+                    width: 75%;
+                    top: -2.2rem !important;
+                    left: initial !important;
+                    right: -2rem;
+                }
+            }
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #092A34;
+            margin-bottom: 1rem;
+        }
+
+        .work {
+            font-size: 1.5rem;
+            color: $color-gray2;
+        }
+
+        p {
+            padding-top: 2.2rem;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            color: $color-gray2;
+        }
+    }
+
+    #scene-page {
+
+        .waves-right {
+            opacity: 0;
+
+            @media (min-width: 768px) {
+                opacity: .4;
+            }
+        }
+    }
+}
+
+@import 'inovation-team-pillars';

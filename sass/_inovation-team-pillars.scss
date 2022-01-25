@@ -1,0 +1,513 @@
+section.inovation-team-pillars {
+
+    max-width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 500px) {
+        .container {
+            padding: 0 4rem;
+        }
+    }
+
+    section.inovation {
+        
+        max-width: 100vw;
+        overflow: hidden;
+        padding-top: 5.5rem;
+        background-color: #1B1E22;
+        position: relative;
+
+        @media (min-width: 1850px) {
+            min-height: 90rem;
+        }
+
+        .section-container {
+            padding-left: 0;
+            padding-right: 0;
+
+            div:first-of-type {
+                padding-left: 3rem;
+                padding-right: 3rem;
+                
+                @media (min-width: 768px) {
+                    padding-left: 4rem;
+                    padding-right: 4rem;
+                }
+
+                @media (min-width: 1536px) {
+                    padding-left: 5rem;
+                    padding-right: 5rem;
+                }
+            
+                @media (min-width: 1850px) {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+
+        .section-default_text {
+
+            z-index: 9;
+
+            @media (min-width: 768px) {
+                padding-bottom: 15rem;
+            }
+
+            @media (min-width: 1024px) {
+                padding-bottom: 12rem;
+            }
+            
+            h2 {
+                text-align: left;
+                color: $color-white;
+                font-weight: 300;
+                font-size: 2rem;
+                letter-spacing: -.03em;
+                margin-bottom: 4rem;
+
+                @media (min-width: 768px) {
+                    font-size: 2.5rem;
+                }
+                @media (min-width: 1366px) {
+                    font-size: 3rem;
+                }
+            }
+
+            p {
+                text-align: left;
+                color: #B1BEC2;
+                margin-bottom: 2rem;
+                line-height: 2.6rem;
+                max-width: 95%;
+                
+                @media (min-width: 768px) {
+                    max-width: initial;
+                    max-width: 39.7rem;
+                }
+                @media (min-width: 1280px) {
+                    max-width: 47rem;
+                }
+                @media (min-width: 1366px) {
+                    font-size: 2rem;
+                    max-width: 57.8rem;
+                }
+            }
+
+            p:last-of-type {
+                font-weight: 500;
+            }
+
+        }
+
+        .bg {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            justify-content: flex-end;
+            align-items: flex-end;
+            display: none;
+            z-index: 9;
+
+            @media (min-width: 1850px) {
+                display: flex;
+            }
+            
+            .img-bg-mountains {
+                position: absolute;
+                left: 60rem;
+                height: 85rem;
+
+                @media (min-width: 2200px) {
+                    left: initial;
+                    right: -10rem;
+                }
+            }
+        }
+
+        .inovation-img {
+
+            position: relative;
+            padding-top: 4rem;
+
+            &::before {
+                content: '';
+                position: absolute;
+                right: -5rem;
+                top: 2rem;
+                width: 32rem;
+                height: 32rem;
+                border-radius: 100%;
+                filter: blur(33rem);
+                z-index: 0;
+                background-color: $color-white;
+                background-color: #32373BE6;
+
+                @media (min-width: 1024px) {
+                    width: 53rem;
+                    height: 53rem;
+                    right: -2rem;
+                    top: -5rem;
+                }
+                @media (min-width: 1850px) {
+                    width: 79rem;
+                    height: 79rem;
+                    right: -20rem;
+                    top: -20rem;
+                }
+            }
+
+            @media (min-width: 1024px) {
+                padding-top: 0;
+            }
+            
+            @media (min-width: 768px) {
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+            }
+
+            .img-mountains-mobile {
+                width: 100%;
+            }
+            
+            .img-mountains {
+                height: 35rem;
+                bottom: 0;
+                z-index: 0;
+
+                @media (min-width: 1024px) {
+                    height: 50rem;
+                }
+                @media (min-width: 1280px) {
+                    height: 55rem;
+                }
+                @media (min-width: 1366px) {
+                    height: 65rem;
+                }
+                @media (min-width: 1536px) {
+                    height: 75rem;
+                }
+                @media (min-width: 1850px) {
+                    opacity: 0;
+                }
+            }
+        }
+
+        #scene_inovation {
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9;
+
+            img {
+                opacity: 0;
+                position: absolute !important;
+                left: initial !important;
+                top: initial !important;
+            }
+
+            .wave {
+                @media (min-width: 1536px) {
+                    opacity: 1;
+                    height: 55rem;
+                    right: -10rem;
+                    top: -2rem !important;
+                }
+                @media (min-width: 1850px) {
+                    right: -2rem;
+                }
+            }
+            
+            .dot-1 {
+                @media (min-width: 1366px) {
+                    max-height: 29rem;
+                    opacity: 1;
+                    right: -19rem;
+                    bottom: 10rem;
+                }
+                @media (min-width: 1536px) {
+                    right: -3rem;
+                }
+                @media (min-width: 1850px) {
+                    max-height: 30rem;
+                    right: 32rem;
+                    bottom: 40%;
+                }
+            }
+
+            .dot-2 {
+                max-height: 29rem;
+                @media (min-width: 1850px) {
+                    max-height: 30rem;
+                    opacity: 1;
+                    bottom: -2rem;
+                    right: -2rem;
+                }
+            }
+        }
+    }
+
+    section.team {
+
+        min-height: 55rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        padding-top: 7rem;
+        padding-bottom: 9rem;
+        
+        @media (min-width: 400px) {
+            padding: 0 4rem;
+            padding-top: 7rem;
+            padding-bottom: 9rem;
+        }
+        
+        @media (min-width: 768px) {
+            padding: 0;
+            padding-top: 7rem;
+            padding-bottom: 10rem;
+        }
+
+        h5 {
+            color: #092A34;
+            font-weight: 400;
+            margin-bottom: 4rem;
+            letter-spacing: -.03em;
+
+            @media (min-width: 768px) {
+                font-size: 3rem;
+            }
+        }
+
+        .jobs {
+            
+            gap: 2rem;
+
+            .job {
+
+                background-color: $color-white;
+                border-radius: .8rem;
+                padding: 3rem 2rem;
+                box-shadow: 0 1rem 5rem 0 #2D4C7126;
+                width: 100%;
+                max-width: 38rem;
+                margin: 0 auto;
+                
+                @media (min-width: 768px) {
+                    max-width: initial;
+                    width: calc(50% - 1rem);
+                }
+                
+                @media (min-width: 1280px) {
+                    margin: 0;
+                    width: calc(33.333% - 1.35rem);
+                }
+                
+                @media (min-width: 1536px) {
+                    width: calc(25% - 1.5rem);
+                }
+
+                h6 {
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                    margin-bottom: 3.8rem;
+                }
+
+                .description {
+
+                    margin-bottom: 7rem;
+
+                    p {
+                        margin-bottom: .4rem;
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .date {
+                    color: #B1BEC2;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        
+    }
+
+    section.pillars {
+        
+        min-height: 55rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #06A75C;
+        padding: 0;
+        
+        @media (min-width: 400px) {
+            padding: 0 4rem;
+        }
+        
+        @media (min-width: 768px) {
+            padding: 0;
+            padding-top: 7rem;
+            padding-bottom: 10rem;
+        }
+
+        #scene-pillars {
+                
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            opacity: 0;
+
+            @media (min-width: 768px) {
+                opacity: 1;
+            }
+
+            .img {
+                position: absolute !important;
+                height: 100%;
+                top: initial !important;
+                left: initial !important;
+            }
+            
+            .dots-left {
+                width: 28rem;
+                height: 100%;
+                background-image: url('https://dev1.riomarca.com/clientes/gavea/images/dots-blue-white.svg');
+                background-size: 100%;
+                background-repeat: repeat-y;
+                left: -18rem !important;
+
+                @media (min-width: 1850px) {
+                    left: -10rem !important;
+                }
+            }
+            
+            .waves-right {
+                
+                right: -25rem;
+                opacity: .6;
+
+                @media (min-width: 1280px) {
+                    right: -17rem;
+                }
+
+                @media (min-width: 1850px) {
+                    height: 130%;
+                    right: -8rem;
+                    bottom: 0;
+                }
+                
+                img {
+                    max-height: 100%;
+                }
+            }
+        }
+
+        h5 {
+            text-align: center;
+            color: $color-white;
+            font-weight: 400;
+            margin-bottom: 6rem;
+
+            @media (min-width: 768px) {
+                font-size: 3rem;
+            }
+        }
+
+        .div-pillars {
+            
+            @media (min-width: 768px) {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                gap: 4rem 0;
+            }
+
+            @media (min-width: 1280px) {
+                flex-wrap: nowrap;
+                gap: 0;
+            }
+
+            .item {
+                @media (min-width: 768px) {
+                    min-width: 50%;
+                }
+
+                @media (min-width: 1280px) {
+                    min-width: initial;
+                    padding: 0 2rem;
+                }
+                
+                @media (min-width: 1536px) {
+                    margin: 0 1rem;
+                }
+            }
+
+        }
+        
+        .owl-pillars_carousel, .div-pillars {
+            
+            .item {
+                
+                text-align: center;
+
+                img {
+                    width: 7rem;
+                    margin: 0 auto;
+                    margin-bottom: 3.5rem;
+                }
+
+                p {
+                    color: $color-white;
+                    max-width: 30rem;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    @media (min-width: 1366px) {
+                        max-width: 24rem;
+                    }
+                }
+            }
+
+            .owl-dots {
+                
+                margin-top: 8.5rem;
+
+                .owl-dot {
+                
+                    @media (min-width: 1024px) {
+                        display: none;
+                    }
+    
+                    span {
+                        width: 1rem;
+                        height: .5rem;
+                        background-color: #D2E3EF;
+                        transition: .3s ease;
+                    }
+                    &.active {
+                        span {
+                            width: 1.5rem;
+                            background-color: $color-yellow;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

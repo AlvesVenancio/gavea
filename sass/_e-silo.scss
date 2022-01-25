@@ -1,0 +1,257 @@
+section.e-silo {
+    overflow: hidden;
+    padding-bottom: 3rem;
+    background-color: #181918;
+
+    @media (min-width: 768px) {
+        padding-bottom: 8.4rem;
+    }
+    
+    @media (min-width: 1280px) {
+        padding-bottom: 12rem;
+    }
+
+    @media (min-width: 1850px) {
+        padding-bottom: 16rem;
+    }
+
+    .row-esilo {
+        padding-top: 3rem;
+
+        @media (min-width: 768px) {
+            padding-top: 8.4rem;
+        }
+        @media (min-width: 1280px) {
+            padding-top: 12rem;
+        }
+        
+        @media (min-width: 1850px) {
+            padding-top: 16rem;
+        }
+    }
+
+    .sustainability {
+        
+        position: relative;
+        
+        @media (min-width: 768px){
+            min-height: 43rem;
+            background-image: url('https://dev1.riomarca.com/clientes/gavea/images/gavea\ word-map.png'), url('https://dev1.riomarca.com/clientes/gavea/images/gavea-word-map_slices.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        @media (min-width: 1280px) {
+            min-height: 72rem;
+        }
+
+        @media (min-width: 1366px) {
+            min-height: 76rem;
+        }
+
+        @media (min-width: 1536px) {
+            min-height: 86rem;
+        }
+        
+        @media (min-width: 1850px) {
+            min-height: 101rem;
+        }
+
+        .video {
+
+            position: absolute;
+            width: 100vw;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .section-default_text {
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding-top: 9rem;
+
+            p {
+                text-align: left;
+            }
+        }
+    }
+
+    .e-silo-img {
+
+        position: relative;
+        padding-top: 4rem;
+        
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+            padding-right: 8rem;
+
+            &::before {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 35rem;
+                height: 35rem;
+                background-color: $color-white;
+                border-radius: 100%;
+                filter: blur(25rem);
+                z-index: 9;
+                opacity: .6;
+            }
+        }
+
+
+        #scene_e-silo {
+            position: absolute !important;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            
+            img {
+                width: 17.2rem;
+                position: absolute !important;
+                left: -1rem !important;
+                top: 2rem !important;
+                
+                @media (min-width: 768px) {
+                    left: unset !important;
+                    right: 2rem !important;
+                    top: 2rem !important;
+                }
+                
+                @media (min-width: 1280px) {
+                    width: 30rem;
+                    right: 3rem !important;
+                    top: 1rem !important;
+                }
+
+                @media (min-width: 1366px) {
+                    right: 10rem !important;
+                    top: 0rem !important;
+                }
+
+                @media (min-width: 1536px) {
+                    right: 9rem !important;
+                    top: 0rem !important;
+                }
+
+                @media (min-width: 1536px) {
+                    width: 35rem;
+                    right: 5rem !important;
+                    top: 0rem !important;
+                }
+            }
+        }
+        
+        .hb-esilo {
+            width: 45rem;
+            transform: translateX(-17rem);
+            margin-bottom: 4rem;
+            z-index: 99;
+
+            @media (min-width: 400px) {
+                width: 55rem;
+                transform: translateX(-22rem);
+                margin-bottom: 4rem;
+            }
+            
+            @media (min-width: 768px) {
+                width: 60rem;
+                transform: translateX(-14rem);
+            }
+            
+            @media (min-width: 1024px) {
+                width: 79rem;
+                transform: translateX(-16rem);
+            }
+            
+            @media (min-width: 1280px) {
+                width: 96rem;
+                transform: translateX(-20rem);
+            }
+            
+            @media (min-width: 1366px) {
+                width: 98rem;
+                transform: translateX(-27rem);
+            }
+
+            @media (min-width: 1536px) {
+                transform: translateX(-22rem);
+            }
+
+            @media (min-width: 1850px) {
+                width: 100rem;
+            }
+        }
+    }
+
+    .section-default_text {
+        
+        position: relative;
+        padding-bottom: 5rem;
+        z-index: 99;
+
+        h2 {
+            color: #EFF0F0;
+        }
+
+        p {
+            color: #B1BEC2;
+        }
+
+        #scene_e-silo_text {
+            position: absolute !important;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+
+            img {
+                position: absolute !important;
+                left: unset !important;
+                top: unset !important;
+                right: -14rem;
+                bottom: -3rem;
+                
+                @media (min-width: 400px) {
+                    right: -20rem;
+                    bottom: -5rem;
+                }
+
+                @media (min-width: 768px) {
+                    right: -9rem;
+                    bottom: -8rem;
+                }
+
+                @media (min-width: 1024px) {
+                    right: -20rem;
+                    bottom: -8rem;
+                }
+
+                @media (min-width: 1280px) {
+                    right: -25rem;
+                    bottom: -12rem;
+                }
+
+                @media (min-width: 1366px) {
+                    right: -30rem;
+                    bottom: -12rem;
+                }
+
+                @media (min-width: 1850px) {
+                    right: -60rem;
+                    bottom: -16rem;
+                }
+
+                @media (min-width: 1920px) {
+                    right: -90rem;
+                    bottom: -20rem;
+                }
+            }
+        }
+    }
+}

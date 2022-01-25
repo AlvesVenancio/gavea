@@ -1,0 +1,28 @@
+@-webkit-keyframes bounce-up-down {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(70%);
+            transform: translateY(70%);
+          }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes bounce-up-down {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(70%);
+            transform: translateY(70%);
+          }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}

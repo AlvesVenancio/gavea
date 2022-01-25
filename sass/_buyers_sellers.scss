@@ -1,0 +1,156 @@
+section.buyers_sellers {
+
+    position: relative;
+    overflow: hidden;
+
+    .bg {
+        img {
+            width: 100%;
+        }
+
+        .check {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+
+    #scene9{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100%;
+        z-index: -9;
+
+        img {
+            max-height: 100rem;
+            position: absolute !important;
+            left: unset !important;
+            top: unset !important;
+            width: 12rem;
+        }
+
+        .waves_img1 {
+            right: 0;
+            width:9rem;
+            @media (min-width: 768px) {
+                width: 12rem;
+            }
+            @media (min-width: 1366px) {
+                width: 22rem;
+            }
+            @media (min-width: 1850px) {
+                width: 30rem;
+            }
+        }
+        
+        .waves_img2 {
+            left: 0 !important;
+            bottom: 35rem;
+            
+            @media (min-width: 768px) {
+                width: 18rem;
+                bottom: 2rem;
+            }
+            @media (min-width: 1366px) {
+                width: 22rem;
+            }
+            @media (min-width: 1850px) {
+                width: 30rem;
+            }
+        }
+    }
+
+    .section-container {
+        padding-left: 0;
+        padding-right: 0;
+
+        @media (min-width: 768px) {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+        }
+    }
+
+    .buyers_sellers_img {
+        
+        min-height: 46rem;
+        position: relative;
+
+        @media (min-width: 768px) {
+            padding-right: 4rem;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+        
+        @media (min-width: 1536px) {
+            padding-right: 5rem;
+            min-height: 49rem;
+        }
+        
+        @media (min-width: 1850px) {
+            padding-right: 0;
+            padding-top: 15rem;
+            padding-bottom: 15rem;
+            min-height: 60rem;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .check {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .section-default_text {
+        padding-left: 2.8rem;
+        padding-top: 4rem;
+        padding-bottom: 7.5rem;
+        
+        @media (min-width: 768px) {
+            padding-left: 4rem;
+        }
+        
+        @media (min-width: 1400px) {
+            padding-left: 15rem;
+        }
+        
+        @media (min-width: 1536px) {
+            padding-left: 15rem;
+        }
+        
+        @media (min-width: 1850px) {
+            padding-left: 0;
+        }
+        
+        h2 {
+            
+            @media (min-width: 768px) {
+                max-width: 30rem;
+            }
+            
+            @media (min-width: 1280px) {
+                max-width: 25rem;
+            }
+
+            @media (min-width: 1366px) {
+                max-width: 40rem;
+            }
+            
+            @media (min-width: 1850px) {
+                max-width: 45rem;
+            }
+        }
+    }
+}

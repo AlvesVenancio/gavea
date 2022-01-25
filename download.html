@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gavea</title>
+
+    <link rel="icon" href="./images//icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/css/bootstrap-reboot.min.css" integrity="sha512-TalcceozSIWRHbu0g0TLVI2pHLKYoaAreUO0J2xU0h3VP/DEy2X2AKVjCB4IqoK1o/CO52ee886eud+ciHaypA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Karla:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style/variables.css">
+    <link rel="stylesheet" href="./style/style.css?20-01-2022-16-23">
+</head>
+<body>
+    
+    <header class="main-header">
+        <div class="container">
+            <div class="row">
+                <div class="logo col-6 order-md-0 col-md-9 order-xl-0 col-xl-2">
+                    <a href="index.html">
+                        <img src="./images/Logo Gavea Branco e laranja.png" alt="Logo Gave" srcset="">
+                    </a>
+                </div>
+                <div class="col-6 order-md-2 col-md-1 order-xl-1 col-xl-8">
+                    <nav class="navbar navbar-expand-xl">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon">
+                                <div></div>
+                            </span>
+                          </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="index.html#bolsa">Bolsa</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="index.html#sustentabilidade">Sustentabilidade</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="equip.html">Equipe</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="contact.html">Contato</a>
+                                    </li>
+                                    <li class="dropdown select-lang nav-item">
+                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img class="pt-br" src="./images/pt-br.png" alt="">
+                                            <img class="en" src="./images/en.png" alt="">
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <li>
+                                                <a class="en dropdown-item nav-link" href="#" onclick="$('html').attr('lang', 'pt-br');">
+                                                    <figure>                                                        
+                                                        <img src="./images/pt-br.png" alt="">
+                                                        <figcaption>pt-br</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="pt-br dropdown-item nav-link" href="#" onclick="$('html').attr('lang', 'en');">
+                                                    <figure>                                                        
+                                                        <img src="./images/en.png" alt="">
+                                                        <figcaption>en</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-6 order-md-1 col-md-2 order-xl-2 col-xl-2 d-none d-md-flex justify-content-end">
+                    <a href="#" class="btn btn-login">Entrar</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- data-platform values | other -> android and windows | apple to Apple device's -->
+    <section class="download page" data-platform="other">
+        <div id="scene-page">
+            <img src="./images/dots-blue-white.svg" alt="" class="dots-left" data-depth=".1">
+            <img src="./images/esilo_waves.svg" alt="" class="waves-right" data-depth=".2">
+        </div>
+        <div class="container">
+            <div class="row">
+                <h3 data-aos="fade-up" data-aos-duration="1500">
+                    Gavea para <span class="change-text">celular</span><span>.</span>
+                </h3>
+                <div class="col-12 download_buttons-mobile" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500">
+                    <a href="https://apps.apple.com/br/app/gavea-marketplace/id1513815247" class="btn-img btn-app_store">
+                        <img src="./images/download-mobile-appstore.svg" alt="">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.gaveaapp" class="btn-img btn-google_play">
+                        <img src="./images/download-mobile-android.svg" alt="">
+                    </a>
+                </div>
+
+                <div class="col-12 download_buttons-desktop windows" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500">
+                    <div class="col-12">
+                        <a href="https://www.microsoft.com/pt-br/p/gavea/9p0n96tq7v29?activetab=pivot:overviewtab" class="btn-img btn-microsoft">
+                            <img src="./images/download-microsoft.svg" alt="">
+                        </a>
+                        <a href="https://www.microsoft.com/pt-br/p/gavea/9p0n96tq7v29?activetab=pivot:overviewtab" class="btn-img btn-windows">
+                            <img src="./images/download-windows.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12 availability">
+                        <h5>Disponível também nas plataforms</h5>
+                        <div>
+                            <a href="https://apps.apple.com/br/app/gavea-marketplace/id1513815247" class="btn-img btn-app_store">
+                                <img src="./images/download-mobile-appstore.svg" alt="">
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.gaveaapp" class="btn-img btn-google_play">
+                                <img src="./images/download-mobile-android.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 download_buttons-desktop mac download_buttons-mac" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500">
+                    <div class="col-12">
+                        <a href="#" class="btn-img btn-mac">
+                            <img src="./images/download-mac.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12 availability">
+                        <h5>Disponível também nas plataforms</h5>
+                        <div>
+                            <a href="https://www.microsoft.com/pt-br/p/gavea/9p0n96tq7v29?activetab=pivot:overviewtab" class="btn-img btn-download-microsoft">
+                                <img src="./images/download-microsoft.svg" alt="">
+                            </a>
+                            <a href="https://apps.apple.com/br/app/gavea-marketplace/id1513815247" class="btn-img btn-app_store">
+                                <img src="./images/download-mobile-appstore.svg" alt="">
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.gaveaapp" class="btn-img btn-google_play">
+                                <img src="./images/download-mobile-android.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="download-img col-12" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150">
+                    <div id="scene_download">
+                        <img src="./images/dots-blue-white.svg" alt="" class="img-fluid" data-depth=".2">
+                    </div>
+                    <div class="overflow">
+                        <img src="./images/hb-smartphone-android.png" alt="download" class="img-smartphone_android">
+                        <img src="./images/hb_desktop.png" alt="download" class="img-desktop">
+                    </div>
+                </div>
+                <div class="col-12 rights" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="150">
+                    <p>
+                        Gavea &copy 2020 Todos os direitos reservados
+                    </p>
+                    <a href="#">
+                        Políticas de Privacidade
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row others-plataforms">
+            <h3 data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
+                Disponível também nas<br>plataformas
+            </h3>
+            <a
+                href="https://play.google.com/store/apps/details?id=com.gaveaapp"
+                class="btn-img btn-google_play"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="1500"
+            >
+                <img src="./images/download-mobile-android.svg" alt="">
+            </a>
+            <a
+                href="https://apps.apple.com/br/app/gavea-marketplace/id1513815247"
+                class="btn-img btn-app_store"
+                data-aos="fade-up"
+                data-aos-delay="150"
+                data-aos-duration="1500"
+            >
+                <img src="./images/download-mobile-appstore.svg" alt="">
+            </a>
+            <a
+                href="https://www.microsoft.com/pt-br/p/gavea/9p0n96tq7v29?activetab=pivot:overviewtab"
+                class="btn-img btn-windows"
+                data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-duration="1500"
+            >
+                <img src="./images/download-microsoft.svg" alt="">
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER BEGIN -->
+    <footer class="main-footer">
+        <div class="section-container">
+            <div class="row links-mobile d-md-none">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Produto
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul class="ul-links">
+                                <li>
+                                    <a href="#">Produtor</a>
+                                </li>
+                                <li>
+                                    <a href="#">Trading</a>
+                                </li>
+                                <li>
+                                    <a href="#">Revenda</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cooperativa</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cerealista</a>
+                                </li>
+                                <li>
+                                    <a href="#">Indústria</a>
+                                </li>
+                                <li>
+                                    <a href="#">Download</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Empresa
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul class="ul-links">
+                                <li>
+                                    <a href="#">Equipe</a>
+                                </li>
+                                <li>
+                                    <a href="#">Carreiras</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contato</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Mídia
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul class="ul-links">
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">News</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <form action="" class="form-newsletter">
+                    <h2>    
+                        Newsletter
+                    </h2>
+                    <div>
+                        <input type="email" class="form-control" id="newsletter" placeholder="email@provedor.com">
+                        <button class="btn" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="row selo_autendicacao">
+                <div class="col-md-4 col-xl-3 d-none d-md-block div-logo">
+                    
+                    <img src="./images/Logo Gavea Branco e laranja.png" alt="">
+
+                    <h6>
+                        <a href="tel:5511978115998">+55 11 97811 5998</a>
+                    </h6>
+                    <p>Gávea, Rio de Janeiro, Brasil</p>
+
+                    <ul class="sociais">
+                        <li>
+                            <a href="https://br.linkedin.com/company/gavea-marketplace">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCL64RZTL4UNmNVNTMev9nwQ">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/gaveamarketplace/">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/gaveamarketplace/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/gaveamarketplac">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://gavea.medium.com">
+                                <i class="fab fa-medium-m"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-none d-xl-block col-xl-2 div-produtos">
+                    <div class="div-links">
+                        <h2>Produto</h2>
+                        <ul class="ul-links">
+                            <li>
+                                <a href="#">Produtor</a>
+                            </li>
+                            <li>
+                                <a href="#">Trading</a>
+                            </li>
+                            <li>
+                                <a href="#">Revenda</a>
+                            </li>
+                            <li>
+                                <a href="#">Cooperativa</a>
+                            </li>
+                            <li>
+                                <a href="#">Cerealista</a>
+                            </li>
+                            <li>
+                                <a href="#">Indústria</a>
+                            </li>
+                            <li>
+                                <a href="#">Download</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xl-4 d-none d-md-block row">
+                    <div class="col-md-12 div-menus">
+                        <div class="div-links d-xl-none">
+                            <h2>Produto</h2>
+                            <ul class="ul-links">
+                                <li>
+                                    <a href="#">Produtor</a>
+                                </li>
+                                <li>
+                                    <a href="#">Trading</a>
+                                </li>
+                                <li>
+                                    <a href="#">Revenda</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cooperativa</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cerealista</a>
+                                </li>
+                                <li>
+                                    <a href="#">Indústria</a>
+                                </li>
+                                <li>
+                                    <a href="#">Download</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="div-links">
+                            <div>
+                                <h2>Empresa</h2>
+                                <ul class="ul-links">
+                                    <li>
+                                        <a href="#">Equipe</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Carreiras</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contato</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>Mídia</h2>
+                                <ul class="ul-links">
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">News</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <form action="" class="form-newsletter">
+                            <h2>    
+                                Newsletter
+                            </h2>
+                            <div>
+                                <input type="email" class="form-control" id="newsletter" placeholder="email@provedor.com">
+                                <button class="btn" type="submit">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-xl-3 div-selo_autendicacao">
+                    <img src="./images/selo-gptw_gavea.png" alt="Selo GPTW GAVEA">
+                    <div class="div-auditor">
+                        <span>Auditado por</span>
+                        <img src="./images/auditor_gavea_kpmg.png" alt="Auditado por KPMG">
+                    </div>
+                    <ul class="sociais d-md-none">
+                        <li>
+                            <a href="https://br.linkedin.com/company/gavea-marketplace">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCL64RZTL4UNmNVNTMev9nwQ">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/gaveamarketplace/">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/gaveamarketplace/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/gaveamarketplac">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://gavea.medium.com">
+                                <i class="fab fa-medium-m"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row copyright">
+                <h6>Gavea &copy 2021 Todos direitos reservados</h6>
+                <h6>
+                    <a href="#">
+                        Política de privacidade
+                    </a>
+                </h6>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://dev1.riomarca.com/clientes/gavea/js/parallax.min.js"></script>
+    <script>
+        $( document ).ready(function() {
+            //scroll animations
+            AOS.init();
+
+            //menu open - body no scroll
+                // left: 37, up: 38, right: 39, down: 40,
+                // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+                var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+
+                function preventDefault(e) {
+                e.preventDefault();
+                }
+
+                function preventDefaultForScrollKeys(e) {
+                if (keys[e.keyCode]) {
+                    preventDefault(e);
+                    return false;
+                }
+                }
+
+                // modern Chrome requires { passive: false } when adding event
+                var supportsPassive = false;
+                try {
+                window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+                    get: function () { supportsPassive = true; } 
+                }));
+                } catch(e) {}
+
+                var wheelOpt = supportsPassive ? { passive: false } : false;
+                var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+
+                // call this to Disable
+                function disableScroll() {
+                window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
+                window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+                window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+                window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+                }
+
+                // call this to Enable
+                function enableScroll() {
+                window.removeEventListener('DOMMouseScroll', preventDefault, false);
+                window.removeEventListener(wheelEvent, preventDefault, wheelOpt); 
+                window.removeEventListener('touchmove', preventDefault, wheelOpt);
+                window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+                }
+
+            $('.main-header .navbar-toggler').click(function() {
+                if($(this).hasClass('collapsed')) {
+                    enableScroll();
+                } else {
+                    $("html, body").animate({ scrollTop: 0 }, "slow");
+                    disableScroll();
+                }
+            });
+
+            // menu item click - menu close
+            $('.main-header .nav-item .nav-link').on('click', function(){
+                $('.navbar-collapse').collapse('hide');
+                enableScroll();
+            });
+
+            // add class 'scrolling' in header if page scroll
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > 100) {
+                    $('.main-header').addClass('scrolling');
+                } else {
+                    $('.main-header').removeClass('scrolling');
+                }
+            });
+        });
+    </script>
+
+    <!-- ONLY IN DOWNLOAD PAGE -->
+        <script>
+            $( document ).ready(function() {
+
+                if ((navigator.userAgent.match(/iPhone/)) || (navigator.userAgent.match(/iPod/)) || (navigator.userAgent.match(/iPad/)) || navigator.platform.toUpperCase().indexOf('MAC')>=0) {
+                    $('.download').attr('data-platform', 'apple');
+                } else {
+                    $('.download').attr('data-platform', 'other');
+                }
+
+                //parallax effect download
+                var scene = document.getElementById('scene_download');
+                var parallaxInstance = new Parallax(scene, {
+                    relativeInput: true,
+                    hoverOnly: true
+                });
+                
+                //parallax effect page
+                var scene = document.getElementById('scene-page');
+                var parallaxInstance = new Parallax(scene, {
+                    relativeInput: true,
+                    hoverOnly: true
+                });
+            });
+        </script>
+    <!-- ONLY IN DOWNLOAD PAGE END -->
+
+</body>
+</html>

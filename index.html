@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gavea</title>
+
+    <link rel="icon" href="./images//icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/css/bootstrap-reboot.min.css" integrity="sha512-TalcceozSIWRHbu0g0TLVI2pHLKYoaAreUO0J2xU0h3VP/DEy2X2AKVjCB4IqoK1o/CO52ee886eud+ciHaypA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Karla:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style/variables.css">
+    <link rel="stylesheet" href="./style/style.css?20-01-2022-16-23">
+</head>
+<body>
+    
+    <header class="main-header hero-padding">
+        <div class="container">
+            <div class="row">
+                <div class="logo col-6 order-md-0 col-md-9 order-xl-0 col-xl-2">
+                    <a href="index.html">
+                        <img src="./images/Logo Gavea Branco e laranja.png" alt="Logo Gave" srcset="">
+                    </a>
+                </div>
+                <div class="col-6 order-md-2 col-md-1 order-xl-1 col-xl-8">
+                    <nav class="navbar navbar-expand-xl">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon">
+                                <div></div>
+                            </span>
+                          </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="index.html#bolsa">Bolsa</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="index.html#sustentabilidade">Sustentabilidade</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="equip.html">Equipe</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="contact.html">Contato</a>
+                                    </li>
+                                    <li class="dropdown select-lang nav-item">
+                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img class="pt-br" src="./images/pt-br.png" alt="">
+                                            <img class="en" src="./images/en.png" alt="">
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <li>
+                                                <a class="en dropdown-item nav-link" href="#" onclick="$('html').attr('lang', 'pt-br');">
+                                                    <figure>                                                        
+                                                        <img src="./images/pt-br.png" alt="">
+                                                        <figcaption>pt-br</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="pt-br dropdown-item nav-link" href="#" onclick="$('html').attr('lang', 'en');">
+                                                    <figure>                                                        
+                                                        <img src="./images/en.png" alt="">
+                                                        <figcaption>en</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-6 order-md-1 col-md-2 order-xl-2 col-xl-2 d-none d-md-flex justify-content-end">
+                    <a href="#" class="btn btn-login">Entrar</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+    <section class="hero">
+        <div class="bg" data-bg="0" data-bg-limit="4"></div>
+        <div id="scene">
+            <img src="./images/hero-parallax/dots.svg" alt="" class="dots-right" data-depth=".5">
+            <img src="./images/hero-parallax/dots.svg" alt="" class="dots-left d-xl-none" data-depth=".8">
+            <img src="./images/hero-parallax/dots-left.svg" alt="" class="dots-left d-none d-xl-block" data-depth=".8">
+            <img src="./images/hero-parallax/waves-right.svg" alt="" class="waves-right" data-depth=".1">
+            <img src="./images/hero-parallax/waves-left.svg" alt="" class="waves-left" data-depth=".1">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 data-aos="fade-up" data-aos-duration="1500">
+                        A melhor forma<br>
+                        de comercializar<br>
+                        commodities<span>.</span>
+                    </h1>
+                    <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">                        
+                        <a href="#" class="vem">Vem pra Gavea <i class="fas fa-caret-right d-none"></i></a>
+                    </div>
+                    <a href="#bolsa" class="scroll">
+                        <img src="./images/scroll-ico.png" alt="scroll"><br>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+            </div>
+        </div>        
+    </section>
+
+    <section class="home-broker" id="bolsa">
+        <div class="row section-container">
+            <div class="broker-img col-12 col-md-6 order-md-1">
+                <div id="scene_broker">
+                    <img src="./images/dots-blue.svg" alt="" class="img-fluid" data-depth="1.2">
+                </div>
+                <img src="./images/hb_desktop.png" alt="Gavea Home Broker" class="hb-desktop">
+                <div class="buys">
+                    <img data-aos="fade-up" data-aos-delay="100" src="./images/compra-22.png" alt="Gavea Compra 22" class="compra-22">
+                    <img data-aos="fade-up" data-aos-delay="250" src="./images/compra-23.png" alt="Gavea Compra 23" class="compra-23">
+                    <img data-aos="fade-up" data-aos-delay="400" src="./images/compra-24.png" alt="Gavea Compra 24" class="compra-24">
+                </div>
+            </div>
+            <div class="section-default_text col-12 col-md-6 order-md-0">
+                <h2 data-aos="fade-right" data-aos-delay="100">Negociação, fechamento e contrato. Tudo em um só lugar</h2>
+                <p data-aos="fade-right" data-aos-delay="150">
+                    Desenvolvida com base em tecnologia Blockchain, Inteligência Artificial e Machine Learning, que simplifica a negociação, execução e liquidação de commodities, em um espaço 100% digital e seguro. 
+                </p>
+                <a data-aos="fade-right" data-aos-delay="200" href="download.html" class="btn btn-discover">
+                    Descubra
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="who-is section-container">
+        <h2 data-aos="fade-up" data-aos-delay="0">Pra quem é a Gavea?</h2>
+
+        <ul>
+            <li data-aos="fade-up" data-aos-delay="100">
+                <h3>
+                    Produtor
+                </h3>
+                <p>
+                    Venda soja ou milho sem custos, tenha visão completa do mercado, controle seu estoque, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <a href="#">Descubra</a>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="150">
+                <h3>
+                    Cooperativa
+                </h3>
+                <p>
+                    Venda soja ou milho sem custos, tenha visão completa do mercado, controle seu estoque, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <a href="#">Descubra</a>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="200">
+                <h3>
+                    Revenda
+                </h3>
+                <p>
+                    Desenvolvida com base em tecnologia Blockchain, Inteligência Artificial e Machine Learning, que simplifica a negociação, execução.
+                </p>
+                <a href="#">Descubra</a>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="250">
+                <h3>
+                    Trading
+                </h3>
+                <p>
+                    Desenvolvida com base em tecnologia Blockchain, Inteligência Artificial e Machine Learning, que simplifica a negociação, execução.
+                </p>
+                <a href="#">Descubra</a>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="300">
+                <h3>
+                    Indústria
+                </h3>
+                <p>
+                    Desenvolvida com base em tecnologia Blockchain, Inteligência Artificial e Machine Learning, que simplifica a negociação, execução.
+                </p>
+                <a href="#">Descubra</a>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="350">
+                <h3>
+                    Cerealista
+                </h3>
+                <p>
+                    Desenvolvida com base em tecnologia Blockchain, Inteligência Artificial e Machine Learning, que simplifica a negociação, execução.
+                </p>
+                <a href="#">Descubra</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="partners section-container" data-aos="fade-up" data-aos-delay="100">
+        <h6>
+            Temos orgulho de trabalhar com algumas das empresas mais confiáveis da agricultura
+        </h6>
+        <div class="owl-partners_carousel owl-carousel owl-theme">
+            <div class="item">
+                <img src="./images/partners/maggi.png" alt="Amaggi">
+            </div>
+            <div class="item">
+                <img src="./images/partners/agro_amazonia.png" alt="Agro Amazônia">
+            </div>
+            <div class="item">
+                <img src="./images/partners/cofco.png" alt="Cofco">
+            </div>
+            <div class="item">
+                <img src="./images/partners/gavilon.png" alt="Gavilon">
+            </div>
+            <div class="item">
+                <img src="./images/partners/lavoro.png" alt="Lavoro">
+            </div>
+        </div>
+    </section>
+    
+    <section class="marketing-map section-container" id="marketing-map">
+        <div class="row">
+            <div class="marketing-img col-12 col-md-6 col-xl-7 col-xxl-8 order-md-1">
+                <img data-aos="fade-left" data-aos-delay="100" src="./images/marketing_map.png" alt="">
+            </div>
+            <div class="section-default_text col-12 col-md-6 col-xl-5 col-xxl-4 order-md-0">
+                <h2 data-aos="fade-right" data-aos-delay="100">
+                    compra e venda com visão total do mercado
+                </h2>
+                <p data-aos="fade-right" data-aos-delay="150">
+                    Veja tudo o que está acontecendo em todas as regiões do Brasil, controle o seu estoque e movimentações
+                </p>
+                <a data-aos="fade-right" data-aos-delay="200" href="download.html" class="btn btn-discover">
+                    Descubra
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="conversation" id="sustentabilidade">
+        <div class="row section-container">
+            <div class="conversation-img col-12 col-md-6">
+                <div class="div-conversation">
+                    <div id="scene2">
+                        <img src="./images/invert-dots-blue.svg" alt="" data-depth=".5">
+                    </div>
+                    <img data-aos="fade-up" data-aos-delay="100" src="./images/conversation.png" alt="">
+                    <div class="messages">
+                        <img data-aos="fade-up" data-aos-delay="200" src="./images/msg1.png" alt="">
+                        <img data-aos="fade-up" data-aos-delay="300" src="./images/msg2.png" alt="">
+                        <img data-aos="fade-up" data-aos-delay="400" src="./images/msg3.png" alt="">
+                        <img data-aos="fade-up" data-aos-delay="500" src="./images/msg4.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="section-default_text col-12 col-md-6">
+                <h2 data-aos="fade-left" data-aos-delay="100">
+                    Converse com potenciais compradores e vendedores
+                </h2>
+                <p data-aos="fade-left" data-aos-delay="150">
+                    Veja tudo o que está acontecendo em todas as regiões do Brasil, controle o seu estoque e movimentações
+                </p>
+                <a data-aos="fade-left" data-aos-delay="200" href="#" class="btn btn-discover">
+                    Descubra
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="buy-sell" id="buy-sell">
+        <div class="row section-container">
+            <div class="buy-sell_img col-12 col-md-6 order-md-1">
+            </div>
+            <div class="section-default_text col-12 col-md-6 order-md-0">
+                <h2 data-aos="fade-right" data-aos-delay="100">
+                    Compra e venda com visão total do mercado
+                </h2>
+                <p data-aos="fade-right" data-aos-delay="150">
+                    Veja tudo o que está acontecendo em todas as regiões do Brasil, controle o seu estoque e movimentações
+                </p>
+                <a data-aos="fade-right" data-aos-delay="200" href="download.html" class="btn btn-discover">
+                    Descubra
+                </a>
+            </div>
+        </div>
+        <div class="buy-sell_pattern row section-container">
+            <div class="col-12 p-0">
+                <img src="./images/buy_sell_bottom.png" alt="" class="img-fluid d-md-none">
+                <div id="scene3" class="d-none d-md-block">
+                    <img src="./images/dots-blue.svg" alt="" class="img-fluid dots" data-depth="1.2">
+                </div>
+            </div>
+        </div>
+        <div id="scene4">
+            <img src="./images/buy-sell_waves-right.svg" alt="" class="img-fluid buy-sell_waves_img1" data-depth=".2">
+            <img src="./images/buy-sell_waves-left-1.svg" alt="" class="img-fluid buy-sell_waves_img2 d-none d-md-block" data-depth=".6">
+            <img src="./images/buy-sell_waves-left-2.svg" alt="" class="img-fluid buy-sell_waves_img3 d-none d-md-block" data-depth=".8">
+        </div>
+        <div class="buy-sell_counter row section-container">
+            <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                    <h6>
+                        +
+                        <span
+                            class="timer count-title count-number"
+                            data-to="100"
+                            data-speed="2500"
+                        >
+                        </span>
+                    </h6>
+                    <p class="count-text">ordens lançadas</p>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="150">
+                    <h6>
+                        +$
+                        <span
+                            class="timer count-title count-number"
+                            data-to="70"
+                            data-speed="2500"
+                        >
+                        </span>
+                        M
+                    </h6>
+                    <p class="count-text">em ofertas desde agosto de 2020</p>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200">
+                    <h6>
+                        +
+                        <span
+                            class="timer count-title count-number"
+                            data-to="20"
+                            data-speed="2500"
+                        >
+                        </span>
+                    </h6>
+                    <p class="count-text">empresas na plataforma</p>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="250">
+                    <h6>
+                        +
+                        <span
+                            class="timer count-title count-number"
+                            data-to="70"
+                            data-speed="2500"                            
+                        >
+                        </span>
+                    </h6>
+                    <p class="count-text">usuários na plataforma</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="e-silo" id="e-silo">
+        <div class="row sustainability">
+            <div class="video">
+            </div>
+            <div class="row section-container">
+                <div class="section-default_text col-12">
+                    <h2 data-aos="fade-left" data-aos-delay="100">Programa de sustentabilidade</h2>
+                    <p data-aos="fade-left" data-aos-delay="150">
+                        Saiba todo o rastro de negociações dos produtos vendidos na Gavea através da tokenização de ativos e a situação (ESG) da propriedade produtiva
+                    </p>
+                </div>
+            </div>        
+        </div>
+        <div class="row row-esilo section-container">
+            <div class="e-silo-img col-12 col-md-6">
+                <div id="scene_e-silo">
+                    <img src="./images/dots-blue-white.svg" alt="" class="img-fluid" data-depth="1.2">
+                </div>
+                <img src="./images/e-silo.png" alt="E-Silo" class="hb-esilo">
+            </div>
+            <div class="section-default_text col-12 col-md-6">
+                <div id="scene_e-silo_text">
+                    <img src="./images/esilo_waves.svg" alt="" class="img-fluid" data-depth="0.4">
+                </div>
+                <h2 data-aos="fade-left" data-aos-delay="100">E-Silo. O lugar perfeito para gerenciar o seu estoque</h2>
+                <p data-aos="fade-left" data-aos-delay="150">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed nisi id dolor sagittis pellentesque. Morbi id mollis ligula, aliquam suscipit risus. Ut felis nisl.
+                </p>
+                <a data-aos="fade-left" data-aos-delay="200" href="#" class="btn btn-discover">
+                    Descubra
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="buyers_sellers" id="buyers_sellers">
+        <div class="bg d-none d-md-block">
+            <img data-aos="fade-up" data-aos-delay="100" src="./images/verified/verified-1024.png" alt="" class="img-fluid d-xl-none">
+            <img data-aos="fade-up" data-aos-delay="100" src="./images/verified/verified-desk.png" alt="" class="img-fluid d-none d-xl-block">
+            <div data-aos="fade-up" data-aos-delay="250" data-aos-duration="1500" class="check">
+                <img src="./images/verified/verified-1024_check.png" alt="" class="img-fluid d-xl-none">
+                <img src="./images/verified/verified-desk_check.png" alt="" class="img-fluid d-none d-xl-block">
+            </div>
+        </div>
+        <div id="scene9">
+            <img src="./images/buy-sell_waves-right.svg" alt="" class="img-fluid waves_img1" data-depth=".2">
+            <img src="./images/buyers_sellers_waves-right.svg" alt="" class="img-fluid waves_img2" data-depth=".6">
+        </div>
+        <div class="row section-container">
+            <div class="buyers_sellers_img col-12 col-md-5 col-xxl-4">
+                <img data-aos="fade-up" data-aos-delay="100" src="./images/verified/verified-mobile.png" alt="" class="img-fluid d-md-none">
+                <div data-aos="fade-up" data-aos-delay="250" data-aos-duration="1500" class="check">
+                    <img src="./images/verified/verified-mobile_check.png" alt="" class="img-fluid d-md-none">
+                </div>
+            </div>
+            <div class="section-default_text col-12 col-md-7 col-xxl-8">
+                <h2 data-aos="fade-right" data-aos-delay="100">
+                    Todos os compradores e vendedores são verificados pela Gavea
+                </h2>
+                <p data-aos="fade-right" data-aos-delay="150">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dignissim lectus dui, quis luctus ipsum interdum eget.
+                </p>
+                <a data-aos="fade-right" data-aos-delay="200" href="download.html" class="btn btn-discover">
+                    Descubra
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero_bottom">
+        <div class="bg"></div>
+        <div id="scene_hero-bottom">
+            <img src="./images/hero-parallax/dots-left.svg" alt="" class="dots-right" data-depth=".5">
+            <img src="./images/hero-parallax/waves_hero-bottom.svg" alt="" class="waves-left" data-depth=".05">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 data-aos="fade-up" data-aos-duration="1500">
+                        Futuro do<br>
+                        agronegócio<span>.</span>
+                    </h2>
+                    <h6 data-aos="fade-up" data-aos-delay="150" data-aos-duration="1500">
+                        Tudo em um só lugar
+                    </h6>
+                    <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">                        
+                        <a href="#" class="vem">Vem pra Gavea <i class="fas fa-caret-right d-none"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+
+    <!-- FOOTER BEGIN -->
+    <footer class="main-footer">
+        <div class="section-container">
+            <div class="row links-mobile d-md-none">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Produto
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul class="ul-links">
+                                <li>
+                                    <a href="#">Produtor</a>
+                                </li>
+                                <li>
+                                    <a href="#">Trading</a>
+                                </li>
+                                <li>
+                                    <a href="#">Revenda</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cooperativa</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cerealista</a>
+                                </li>
+                                <li>
+                                    <a href="#">Indústria</a>
+                                </li>
+                                <li>
+                                    <a href="#">Download</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Empresa
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul class="ul-links">
+                                <li>
+                                    <a href="#">Equipe</a>
+                                </li>
+                                <li>
+                                    <a href="#">Carreiras</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contato</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Mídia
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul class="ul-links">
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">News</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <form action="" class="form-newsletter">
+                    <h2>    
+                        Newsletter
+                    </h2>
+                    <div>
+                        <input type="email" class="form-control" id="newsletter" placeholder="email@provedor.com">
+                        <button class="btn" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="row selo_autendicacao">
+                <div class="col-md-4 col-xl-3 d-none d-md-block div-logo">
+                    
+                    <img src="./images/Logo Gavea Branco e laranja.png" alt="">
+
+                    <h6>
+                        <a href="tel:5511978115998">+55 11 97811 5998</a>
+                    </h6>
+                    <p>Gávea, Rio de Janeiro, Brasil</p>
+
+                    <ul class="sociais">
+                        <li>
+                            <a href="https://br.linkedin.com/company/gavea-marketplace">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCL64RZTL4UNmNVNTMev9nwQ">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/gaveamarketplace/">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/gaveamarketplace/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/gaveamarketplac">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://gavea.medium.com">
+                                <i class="fab fa-medium-m"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-none d-xl-block col-xl-2 div-produtos">
+                    <div class="div-links">
+                        <h2>Produto</h2>
+                        <ul class="ul-links">
+                            <li>
+                                <a href="#">Produtor</a>
+                            </li>
+                            <li>
+                                <a href="#">Trading</a>
+                            </li>
+                            <li>
+                                <a href="#">Revenda</a>
+                            </li>
+                            <li>
+                                <a href="#">Cooperativa</a>
+                            </li>
+                            <li>
+                                <a href="#">Cerealista</a>
+                            </li>
+                            <li>
+                                <a href="#">Indústria</a>
+                            </li>
+                            <li>
+                                <a href="#">Download</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-5 col-xl-4 d-none d-md-block row">
+                    <div class="col-md-12 div-menus">
+                        <div class="div-links d-xl-none">
+                            <h2>Produto</h2>
+                            <ul class="ul-links">
+                                <li>
+                                    <a href="#">Produtor</a>
+                                </li>
+                                <li>
+                                    <a href="#">Trading</a>
+                                </li>
+                                <li>
+                                    <a href="#">Revenda</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cooperativa</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cerealista</a>
+                                </li>
+                                <li>
+                                    <a href="#">Indústria</a>
+                                </li>
+                                <li>
+                                    <a href="#">Download</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="div-links">
+                            <div>
+                                <h2>Empresa</h2>
+                                <ul class="ul-links">
+                                    <li>
+                                        <a href="#">Equipe</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Carreiras</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contato</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2>Mídia</h2>
+                                <ul class="ul-links">
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">News</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <form action="" class="form-newsletter">
+                            <h2>    
+                                Newsletter
+                            </h2>
+                            <div>
+                                <input type="email" class="form-control" id="newsletter" placeholder="email@provedor.com">
+                                <button class="btn" type="submit">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-xl-3 div-selo_autendicacao">
+                    <img src="./images/selo-gptw_gavea.png" alt="Selo GPTW GAVEA">
+                    <div class="div-auditor">
+                        <span>Auditado por</span>
+                        <img src="./images/auditor_gavea_kpmg.png" alt="Auditado por KPMG">
+                    </div>
+                    <ul class="sociais d-md-none">
+                        <li>
+                            <a href="https://br.linkedin.com/company/gavea-marketplace">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCL64RZTL4UNmNVNTMev9nwQ">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/gaveamarketplace/">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/gaveamarketplace/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/gaveamarketplac">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://gavea.medium.com">
+                                <i class="fab fa-medium-m"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row copyright">
+                <h6>Gavea &copy 2021 Todos direitos reservados</h6>
+                <h6>
+                    <a href="#">
+                        Política de privacidade
+                    </a>
+                </h6>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://dev1.riomarca.com/clientes/gavea/js/parallax.min.js"></script>
+    <script>
+        $( document ).ready(function() {
+            //scroll animations
+            AOS.init();
+
+            //menu open - body not scroll
+                // left: 37, up: 38, right: 39, down: 40,
+                // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+                var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+
+                function preventDefault(e) {
+                e.preventDefault();
+                }
+
+                function preventDefaultForScrollKeys(e) {
+                if (keys[e.keyCode]) {
+                    preventDefault(e);
+                    return false;
+                }
+                }
+
+                // modern Chrome requires { passive: false } when adding event
+                var supportsPassive = false;
+                try {
+                window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+                    get: function () { supportsPassive = true; } 
+                }));
+                } catch(e) {}
+
+                var wheelOpt = supportsPassive ? { passive: false } : false;
+                var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+
+                // call this to Disable
+                function disableScroll() {
+                window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
+                window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+                window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+                window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+                }
+
+                // call this to Enable
+                function enableScroll() {
+                window.removeEventListener('DOMMouseScroll', preventDefault, false);
+                window.removeEventListener(wheelEvent, preventDefault, wheelOpt); 
+                window.removeEventListener('touchmove', preventDefault, wheelOpt);
+                window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+                }
+
+            $('.main-header .navbar-toggler').click(function() {
+                if($(this).hasClass('collapsed')) {
+                    enableScroll();
+                } else {
+                    // $("html, body").animate({ scrollTop: 0 }, "slow");
+                    disableScroll();
+                }
+            });
+
+            // menu item click - menu close | body scroll enable
+            $('.main-header .nav-item .nav-link').on('click', function(){
+                $('.navbar-collapse').collapse('hide');
+                enableScroll();
+            });
+
+            // add class 'scrolling' in header if page scroll
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > 100) {
+                    $('.main-header').addClass('scrolling');
+                } else {
+                    $('.main-header').removeClass('scrolling');
+                }
+            });
+        });
+    </script>
+
+    <!-- ONLY IN HOME PAGE -->
+        <!-- Script to Random Bg Hero | Bg Parallax | Owl Carousel - To Index Page -->
+        <script>
+            $( document ).ready(function() {
+                
+                //random number function
+                function getRandomIntInclusive(min, max) {
+                    min = Math.ceil(min);
+                    max = Math.floor(max);
+                    return Math.floor(Math.random() * (max - min + 1)) + min;
+                }
+
+                //random bg to hero
+                let bgHero = $('.hero .bg');
+                let bgHeroLimit = bgHero.data('bg-limit');
+                let bgHeroNumber = getRandomIntInclusive(1, bgHeroLimit);
+                bgHero.attr('data-bg', bgHeroNumber);
+
+                //parallax effect
+                var scene = document.getElementById('scene');
+                var parallaxInstance = new Parallax(scene, {
+                    relativeInput: true,
+                    hoverOnly: true
+                });
+
+                //parallax effect 2
+                var scene = document.getElementById('scene2');
+                var parallaxInstance = new Parallax(scene, {
+                    relativeInput: true,
+                    hoverOnly: true
+                });
+
+                //parallax effect 3
+                var scene = document.getElementById('scene3');
+                var parallaxInstance = new Parallax(scene, {
+                    relativeInput: true,
+                    hoverOnly: true
+                });
+
+                //parallax effect 4
+                var scene = document.getElementById('scene4');
+                var parallaxInstance = new Parallax(scene, {
+                    relativeInput: true,
+                    hoverOnly: true
+                });
+
+                //parallax effect 5
+                var scene = document.getElementById('scene_hero-bottom');
+                var parallaxInstance = new Parallax(scene, {
+                    relativeInput: true,
+                    hoverOnly: true
+                });
+
+                //parallax effect 6
+                var scene = document.getElementById('scene_broker');
+                var parallaxInstance = new Parallax(scene, {
+                    relativeInput: true,
+                    hoverOnly: true
+                });
+
+                //parallax effect 7
+                var scene = document.getElementById('scene_e-silo');
+                var parallaxInstance = new Parallax(scene, {
+                    relativeInput: true,
+                    hoverOnly: true
+                });
+
+                //parallax effect 8
+                var scene = document.getElementById('scene_e-silo_text');
+                var parallaxInstance = new Parallax(scene, {
+                    relativeInput: true,
+                    hoverOnly: true
+                });
+
+                //parallax effect 9
+                var scene = document.getElementById('scene9');
+                var parallaxInstance = new Parallax(scene, {
+                    relativeInput: true,
+                    hoverOnly: true
+                });
+
+                //partners carousel            
+                $('.owl-partners_carousel').owlCarousel({
+                    loop: true,
+                    autoplay: true,
+                    margin: 10,
+                    nav: false,
+                    dots: true,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        1024: {
+                            items: 5
+                        }
+                    }
+                });
+            });
+        </script>
+
+        <!-- Script to Counter To Index Page -->
+        <script>
+            (function ($) {
+                $.fn.countTo = function (options) {
+                    options = options || {};
+                    
+                    return $(this).each(function () {
+                        // set options for current element
+                        var settings = $.extend({}, $.fn.countTo.defaults, {
+                            from:            $(this).data('from'),
+                            to:              $(this).data('to'),
+                            speed:           $(this).data('speed'),
+                            refreshInterval: $(this).data('refresh-interval'),
+                            decimals:        $(this).data('decimals')
+                        }, options);
+                        
+                        // how many times to update the value, and how much to increment the value on each update
+                        var loops = Math.ceil(settings.speed / settings.refreshInterval),
+                            increment = (settings.to - settings.from) / loops;
+                        
+                        // references & variables that will change with each update
+                        var self = this,
+                            $self = $(this),
+                            loopCount = 0,
+                            value = settings.from,
+                            data = $self.data('countTo') || {};
+                        
+                        $self.data('countTo', data);
+                        
+                        // if an existing interval can be found, clear it first
+                        if (data.interval) {
+                            clearInterval(data.interval);
+                        }
+                        data.interval = setInterval(updateTimer, settings.refreshInterval);
+                        
+                        // initialize the element with the starting value
+                        render(value);
+                        
+                        function updateTimer() {
+                            value += increment;
+                            loopCount++;
+                            
+                            render(value);
+                            
+                            if (typeof(settings.onUpdate) == 'function') {
+                                settings.onUpdate.call(self, value);
+                            }
+                            
+                            if (loopCount >= loops) {
+                                // remove the interval
+                                $self.removeData('countTo');
+                                clearInterval(data.interval);
+                                value = settings.to;
+                                
+                                if (typeof(settings.onComplete) == 'function') {
+                                    settings.onComplete.call(self, value);
+                                }
+                            }
+                        }
+                        
+                        function render(value) {
+                            var formattedValue = settings.formatter.call(self, value, settings);
+                            $self.html(formattedValue);
+                        }
+                    });
+                };
+                
+                $.fn.countTo.defaults = {
+                    from: 0,               // the number the element should start at
+                    to: 0,                 // the number the element should end at
+                    speed: 1000,           // how long it should take to count between the target numbers
+                    refreshInterval: 100,  // how often the element should be updated
+                    decimals: 0,           // the number of decimal places to show
+                    formatter: formatter,  // handler for formatting the value before rendering
+                    onUpdate: null,        // callback method for every time the element is updated
+                    onComplete: null       // callback method for when the element finishes updating
+                };
+                
+                function formatter(value, settings) {
+                    return value.toFixed(settings.decimals);
+                }
+            }(jQuery));
+
+            jQuery(function ($) {
+                // custom formatting example
+                $('.count-number').data('countToOptions', {
+                    formatter: function (value, options) {
+                    return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+                    }
+                });
+                
+                // start all the timers
+                var counterVisible = false;
+                $(window).scroll(function() {
+                    var top_of_element = $(".buy-sell_counter").offset().top;
+                    var bottom_of_element = $(".buy-sell_counter").offset().top + $(".buy-sell_counter").outerHeight();
+                    var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+                    var top_of_screen = $(window).scrollTop();
+
+                    if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)){
+                        // the element is visible, do something
+                        if (!counterVisible) {
+                            $('.timer').each(count);
+                            counterVisible = true;
+                        }
+                    } else {
+                        // the element is not visible, do something else
+                        counterVisible = false;
+                    }
+                });
+                
+                function count(options) {
+                    var $this = $(this);
+                    options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+                    $this.countTo(options);
+                }
+            });
+        </script>
+    <!-- ONLY IN HOME PAGE END -->
+
+</body>
+</html>
+<!-- FOOTER END -->

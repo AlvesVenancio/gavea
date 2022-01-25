@@ -1,0 +1,115 @@
+section.who-is {
+
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    
+    @media (min-width: 768px) {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    @media (min-width: 1280px) {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    @media (min-width: 1536px) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        margin-bottom: 5rem;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+
+    ul {
+        padding: 3rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 4.5rem 4rem;
+        
+        @media (min-width: 768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 7rem 0;
+            gap: 6.5rem 2rem;
+        }
+        
+        @media (min-width: 1280px) {
+            gap: 9rem 2rem;
+        }
+        
+        @media (min-width: 1366px) {
+            padding: 8.5rem 0;
+        }
+        
+        @media (min-width: 1850px) {
+            padding: 9rem 0;
+            gap: 9rem 4rem;
+        }
+
+        li {
+
+            @media (min-width: 768px) {
+                flex: 1 1 calc(50% - 1rem);
+            }
+
+            @media (min-width: 1280px) {
+                flex: 1 1 calc(33% - 1rem);
+            }
+
+            @media (min-width: 1850px) {
+                flex: 1 1 calc(33% - 2.5rem);
+            }
+
+            h3 {
+                font-size: 1.8rem;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                &::before {
+                    content: '';
+                    width: 1.3rem;
+                    height: 1.3rem;
+                    background-color: $color-orange;
+                    border-radius: .3rem;
+                }
+            }
+
+            p {
+                margin: 2rem 0;
+
+                @media (min-width: 1850px) {
+                    font-size: 2rem;
+                }
+            }
+
+            a {
+                font-weight: 700;
+                font-size: 1.6rem;
+                color: $color-gray1;
+                display: flex;
+                align-items: center;
+
+                &::after {
+                    content: '';
+                    margin-left: 1rem;
+                    border-top: .6rem solid transparent;
+                    border-bottom: .6rem solid transparent;
+                    border-left: .6rem solid $color-gray1;
+                }
+                
+                &:hover {
+                    color: $color-orange;
+                    &::after {
+                        border-left: .6rem solid $color-orange;
+                    }
+                }
+            }
+        }
+    }
+}

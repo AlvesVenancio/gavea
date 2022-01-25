@@ -1,0 +1,76 @@
+section.partners {
+
+    margin-bottom: 10rem;
+
+    @media (min-width: 1366px) {
+        margin-bottom: 13rem;
+    }
+
+    @media (min-width: 1536px) {
+        margin-bottom: 15rem;
+    }
+
+    @media (min-width: 1850px) {
+        margin-bottom: 18rem;
+    }
+
+    h6 {
+        text-align: center;
+
+        @media (min-width: 1280px) {
+            font-size: 2.2rem;
+        }
+
+        @media (min-width: 1366px) {
+            font-size: 2.5rem;
+        }
+        
+        @media (min-width: 1366px) {
+            font-size: 2.5rem;
+        }
+    }
+
+    .owl-partners_carousel {
+        
+        margin-top: 6rem;
+
+        img {
+            height: 6rem;
+            width: auto;
+            max-width: 16rem;
+            object-fit: contain;
+            margin: 0 auto;
+            filter: grayscale(1);
+            transition: filter .3s ease;
+
+            &:hover {
+                filter: grayscale(0);
+            }
+        }
+
+        .owl-dots {
+            margin-top: 8rem !important;
+
+            .owl-dot {
+                
+                @media (min-width: 1024px) {
+                    display: none;
+                }
+
+                span {
+                    width: 1rem;
+                    height: .5rem;
+                    background-color: #D2E3EF;
+                    transition: .3s ease;
+                }
+                &.active {
+                    span {
+                        width: 1.5rem;
+                        background-color: $color-orange;
+                    }
+                }
+            }
+        }
+    }
+
+}
