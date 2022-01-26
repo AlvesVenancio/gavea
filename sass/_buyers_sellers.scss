@@ -121,9 +121,13 @@ section.buyers_sellers {
         @media (min-width: 768px) {
             padding-left: 4rem;
         }
+
+        @media (min-width: 1200px) {
+            padding-left: 8rem;
+        }
         
         @media (min-width: 1400px) {
-            padding-left: 15rem;
+            padding-left: 13rem;
         }
         
         @media (min-width: 1536px) {
@@ -132,24 +136,60 @@ section.buyers_sellers {
         
         @media (min-width: 1850px) {
             padding-left: 0;
+            margin-left: -22rem;
         }
         
         h2 {
+
+            @media (max-width: 768px) {
+                max-width: 27.6rem;
+                margin: 0 auto;
+                margin-bottom: 2rem;
+            }
             
             @media (min-width: 768px) {
-                max-width: 30rem;
+                max-width: 35.5rem;
             }
             
             @media (min-width: 1280px) {
-                max-width: 25rem;
+                max-width: 44rem;
             }
 
             @media (min-width: 1366px) {
-                max-width: 40rem;
+                max-width: 43.9rem;
+            }
+
+            @media (min-width: 1536px) {
+                max-width: 53.3rem;
             }
             
             @media (min-width: 1850px) {
                 max-width: 45rem;
+            }
+        }
+
+        p {
+            @media (max-width: 768px) {
+                max-width: 35.3rem;
+                margin: 0 auto;
+                margin-bottom: 2rem;
+            }
+
+            @media (min-width: 768px) {
+                max-width: 35.3rem;
+            }
+
+            @media (min-width: 1280px) {
+                max-width: 40.5rem;
+            }
+
+            @media (min-width: 1366px) {
+                font-size: 1.8rem;
+            }
+
+            @media (min-width: 1850px) {
+                font-size: 2rem;
+                margin: 0;
             }
         }
     }

@@ -1375,7 +1375,6 @@ section.hero {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding-bottom: 120px;
   height: 100vh;
   position: relative;
   overflow: hidden;
@@ -2948,10 +2947,6 @@ section.e-silo .sustainability {
 @media (min-width: 768px) {
   section.e-silo .sustainability {
     min-height: 43rem;
-    background-image: url("https://dev1.riomarca.com/clientes/gavea/images/gavea word-map.png"), url("https://dev1.riomarca.com/clientes/gavea/images/gavea-word-map_slices.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
   }
 }
 
@@ -2980,30 +2975,72 @@ section.e-silo .sustainability {
 }
 
 section.e-silo .sustainability .video {
-  position: absolute;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   overflow: hidden;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  section.e-silo .sustainability .video {
+    display: initial;
+  }
 }
 
 section.e-silo .sustainability .video video {
   width: 100%;
 }
 
+@media (min-width: 1024px) {
+  section.e-silo .sustainability .section-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
 section.e-silo .sustainability .section-default_text {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding-top: 9rem;
 }
 
+section.e-silo .sustainability .section-default_text h2 {
+  text-align: left;
+}
+
+@media (max-width: 992px) {
+  section.e-silo .sustainability .section-default_text h2 {
+    width: 100%;
+    max-width: initial;
+  }
+}
+
+@media (min-width: 1024px) {
+  section.e-silo .sustainability .section-default_text {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 section.e-silo .sustainability .section-default_text p {
   text-align: left;
+}
+
+@media (max-width: 992px) {
+  section.e-silo .sustainability .section-default_text p {
+    max-width: initial;
+  }
 }
 
 section.e-silo .e-silo-img {
@@ -3231,6 +3268,80 @@ section.e-silo .section-default_text #scene_e-silo_text img {
   }
 }
 
+section.e-silo .section-list {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  section.e-silo .section-list {
+    z-index: 99;
+    padding-top: 9rem;
+    padding-bottom: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+section.e-silo .section-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+section.e-silo .section-list li div.img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  background-color: #393E42;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1536px) {
+  section.e-silo .section-list li div.img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+
+section.e-silo .section-list li div.img img {
+  max-width: 80%;
+}
+
+section.e-silo .section-list li h6 {
+  color: #B1BEC2;
+  font-family: 'Karla';
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+@media (min-width: 1536px) {
+  section.e-silo .section-list li h6 {
+    font-size: 1.6rem;
+  }
+}
+
+section.e-silo .section-list li span {
+  color: #748C94;
+  font-size: 1.3rem;
+}
+
 section.buyers_sellers {
   position: relative;
   overflow: hidden;
@@ -3379,9 +3490,15 @@ section.buyers_sellers .section-default_text {
   }
 }
 
+@media (min-width: 1200px) {
+  section.buyers_sellers .section-default_text {
+    padding-left: 8rem;
+  }
+}
+
 @media (min-width: 1400px) {
   section.buyers_sellers .section-default_text {
-    padding-left: 15rem;
+    padding-left: 13rem;
   }
 }
 
@@ -3394,30 +3511,78 @@ section.buyers_sellers .section-default_text {
 @media (min-width: 1850px) {
   section.buyers_sellers .section-default_text {
     padding-left: 0;
+    margin-left: -22rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section.buyers_sellers .section-default_text h2 {
+    max-width: 27.6rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
   }
 }
 
 @media (min-width: 768px) {
   section.buyers_sellers .section-default_text h2 {
-    max-width: 30rem;
+    max-width: 35.5rem;
   }
 }
 
 @media (min-width: 1280px) {
   section.buyers_sellers .section-default_text h2 {
-    max-width: 25rem;
+    max-width: 44rem;
   }
 }
 
 @media (min-width: 1366px) {
   section.buyers_sellers .section-default_text h2 {
-    max-width: 40rem;
+    max-width: 43.9rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  section.buyers_sellers .section-default_text h2 {
+    max-width: 53.3rem;
   }
 }
 
 @media (min-width: 1850px) {
   section.buyers_sellers .section-default_text h2 {
     max-width: 45rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section.buyers_sellers .section-default_text p {
+    max-width: 35.3rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  section.buyers_sellers .section-default_text p {
+    max-width: 35.3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  section.buyers_sellers .section-default_text p {
+    max-width: 40.5rem;
+  }
+}
+
+@media (min-width: 1366px) {
+  section.buyers_sellers .section-default_text p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1850px) {
+  section.buyers_sellers .section-default_text p {
+    font-size: 2rem;
+    margin: 0;
   }
 }
 
@@ -3456,7 +3621,7 @@ section.hero_bottom .bg {
 
 @media (min-width: 768px) {
   section.hero_bottom .bg {
-    background-image: url("https://dev1.riomarca.com/clientes/gavea/images/hero-bottom/768.png");
+    background-image: url("https://dev1.riomarca.com/clientes/gavea/images/hero-bottom/1024.png");
   }
 }
 
@@ -4811,6 +4976,20 @@ section.hero_careers .bg {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
+}
+
+section.hero_careers .bg::before {
+  content: '';
+  opacity: .7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 266px;
+  background: rgba(0, 0, 0, 0);
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(96, 96, 96, 0)));
+  background: linear-gradient(180deg, black 0%, rgba(96, 96, 96, 0) 100%);
+  z-index: -9;
 }
 
 section.hero_careers .bg::after {

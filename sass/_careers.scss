@@ -41,6 +41,19 @@ section.hero_careers {
             transform: scale(1.1);
         }
 
+        &::before {
+            content: '';
+            opacity: .7;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 266px;
+            background: rgba(0,0,0,0);
+            background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(96,96,96,0) 100%);
+            z-index: -9;
+        }
+
         &::after {
             content: '';
             width: 100vw;
