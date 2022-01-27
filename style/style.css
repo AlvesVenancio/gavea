@@ -2138,25 +2138,43 @@ section.partners .owl-partners_carousel .owl-dots .owl-dot.active span {
 
 @media (min-width: 768px) {
   .marketing-map .marketing-img {
-    padding-top: 4rem;
+    padding-top: 6rem;
+    min-height: 35rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .marketing-map .marketing-img {
+    padding-top: 9rem;
+    min-height: 45rem;
   }
 }
 
 @media (min-width: 1280px) {
   .marketing-map .marketing-img {
-    padding-top: 4rem;
+    padding-top: 20rem;
+    min-height: 65rem;
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1366px) {
   .marketing-map .marketing-img {
-    padding-top: 4rem;
+    padding-top: 20rem;
+    min-height: 65rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .marketing-map .marketing-img {
+    padding-top: 30rem;
+    min-height: 82rem;
   }
 }
 
 @media (min-width: 1850px) {
   .marketing-map .marketing-img {
-    padding-top: 7rem;
+    padding-top: 35rem;
+    min-height: 89rem;
   }
 }
 
@@ -2215,36 +2233,254 @@ section.partners .owl-partners_carousel .owl-dots .owl-dot.active span {
   }
 }
 
-.marketing-map .marketing-img img {
-  max-width: 100%;
+.marketing-map .marketing-img .map {
+  width: 26.4rem;
   z-index: 9;
   margin: 0 auto;
+  position: relative;
 }
 
 @media (min-width: 768px) {
-  .marketing-map .marketing-img img {
-    margin: 0;
-    max-width: 33rem;
+  .marketing-map .marketing-img .map {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+}
+
+@media (min-width: 1024px) {
+  .marketing-map .marketing-img .map {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
 }
 
 @media (min-width: 1280px) {
-  .marketing-map .marketing-img img {
-    max-width: 65rem;
+  .marketing-map .marketing-img .map {
+    -webkit-transform: scale(2.35);
+            transform: scale(2.35);
   }
 }
 
-@media (min-width: 1400px) {
-  .marketing-map .marketing-img img {
-    max-width: 80rem;
+@media (min-width: 1366px) {
+  .marketing-map .marketing-img .map {
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+  }
+}
+
+@media (min-width: 1536px) {
+  .marketing-map .marketing-img .map {
+    -webkit-transform: scale(3);
+            transform: scale(3);
   }
 }
 
 @media (min-width: 1850px) {
-  .marketing-map .marketing-img img {
-    margin-left: -8rem;
-    max-width: 120rem;
+  .marketing-map .marketing-img .map {
+    -webkit-transform: scale(3.35);
+            transform: scale(3.35);
   }
+}
+
+.marketing-map .marketing-img .map > img {
+  width: 100%;
+}
+
+.marketing-map .marketing-img .map .points > img {
+  width: 100%;
+}
+
+.marketing-map .marketing-img .map .points, .marketing-map .marketing-img .map .tokens {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.marketing-map .marketing-img .map .tokens .token {
+  width: 11.3rem;
+  height: 2.3rem;
+  background-color: #ffffff;
+  border-radius: 3rem;
+  -webkit-box-shadow: 0 1rem 1rem #00000020;
+          box-shadow: 0 1rem 1rem #00000020;
+  padding: .19rem .3rem;
+  position: absolute;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.marketing-map .marketing-img .map .tokens .token::after {
+  content: '';
+  width: .4rem;
+  height: .4rem;
+  border-radius: 0.06rem;
+  position: absolute;
+  left: 50%;
+  bottom: -.2rem;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+          transform: translateX(-50%) rotate(45deg);
+  background-color: white;
+}
+
+.marketing-map .marketing-img .map .tokens .token div.icon {
+  border-radius: 100%;
+  width: 1.9rem;
+  height: 1.9rem;
+  background-image: url("https://dev1.riomarca.com/clientes/gavea/images/icon-soy_down.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.marketing-map .marketing-img .map .tokens .token div.icon.corn-icon {
+  background-image: url("https://dev1.riomarca.com/clientes/gavea/images/icon-corn_down.png");
+}
+
+.marketing-map .marketing-img .map .tokens .token div.icon img {
+  max-width: 100%;
+}
+
+.marketing-map .marketing-img .map .tokens .token > div {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .3rem;
+}
+
+.marketing-map .marketing-img .map .tokens .token > div .content div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: .2rem;
+  padding-left: .2rem;
+  position: relative;
+}
+
+.marketing-map .marketing-img .map .tokens .token > div .content div span {
+  font-size: .8rem;
+  font-weight: 700;
+  line-height: .5rem;
+  color: #47595F;
+}
+
+.marketing-map .marketing-img .map .tokens .token > div .content div small {
+  font-size: .3rem;
+  font-weight: 600;
+  line-height: .1rem;
+  color: #748C94;
+}
+
+.marketing-map .marketing-img .map .tokens .token > div .content .ton {
+  color: #47595F;
+  padding-left: 0;
+  padding-right: .5rem;
+  position: relative;
+}
+
+.marketing-map .marketing-img .map .tokens .token > div .content .ton::after {
+  content: '';
+  width: .1rem;
+  height: .7rem;
+  background-color: #D2E3EF;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translateX(0.1rem);
+          transform: translateX(0.1rem);
+}
+
+.marketing-map .marketing-img .map .tokens .token > div .number {
+  margin-top: .1rem;
+}
+
+.marketing-map .marketing-img .map .tokens .token > div .info {
+  margin-top: .2rem;
+  gap: .15rem !important;
+  font-size: .3rem;
+  color: #5998C5;
+}
+
+.marketing-map .marketing-img .map .tokens .token > div .info > div {
+  background-color: #ffffff;
+  background-image: url("https://dev1.riomarca.com/clientes/gavea/images/token-info_border.svg");
+  background-size: 100% 95%;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 1.6rem;
+  min-height: .5rem;
+  text-align: center;
+  line-height: .3em;
+  padding: .15rem .25rem;
+}
+
+.marketing-map .marketing-img .map .tokens .token[data-updown='up'] div.icon {
+  background-image: url("https://dev1.riomarca.com/clientes/gavea/images/icon-soy_up.png");
+}
+
+.marketing-map .marketing-img .map .tokens .token[data-updown='up'] div.icon.corn-icon {
+  background-image: url("https://dev1.riomarca.com/clientes/gavea/images/icon-corn_up.png");
+}
+
+.marketing-map .marketing-img .map .tokens .token[data-updown='up'] div.icon img {
+  opacity: 0;
+}
+
+.marketing-map .marketing-img .map .tokens .token[data-updown='up'] .money span {
+  color: #06A75C;
+}
+
+.marketing-map .marketing-img .map .tokens .token[data-updown='down'] div.icon {
+  -webkit-box-shadow: -.083rem .083rem .27rem #6C7F8B66;
+          box-shadow: -.083rem .083rem .27rem #6C7F8B66;
+}
+
+.marketing-map .marketing-img .map .tokens .token[data-updown='down'] .money span {
+  color: #FF3A3A;
+}
+
+.marketing-map .marketing-img .map .tokens #amazonas1 {
+  left: 2.8%;
+  top: 4.1%;
+}
+
+.marketing-map .marketing-img .map .tokens #amazonas2 {
+  left: -5%;
+  top: 22.5%;
+}
+
+.marketing-map .marketing-img .map .tokens #para {
+  left: 33.2%;
+  top: 15.3%;
+}
+
+.marketing-map .marketing-img .map .tokens #bahia {
+  left: 62%;
+  top: 28.6%;
+}
+
+.marketing-map .marketing-img .map .tokens #mato-grosso {
+  left: 30%;
+  top: 39.8%;
+}
+
+.marketing-map .marketing-img .map .tokens #minas-gerais {
+  left: 54.5%;
+  top: 52.7%;
+}
+
+.marketing-map .marketing-img .map .tokens #santa-catarina {
+  left: 36%;
+  top: 72%;
 }
 
 .marketing-map .section-default_text h2 {
