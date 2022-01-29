@@ -697,6 +697,8 @@ section.page #scene-page .waves-right {
 
 @media (min-width: 1200px) {
     .main-header .navbar-collapse {
+        -webkit-transform: none;
+        transform: none;
         position: initial;
         height: initial;
         width: initial;
@@ -716,6 +718,15 @@ section.page #scene-page .waves-right {
 .main-header.negative .navbar-toggler[aria-expanded='false'] .navbar-toggler-icon>div::before,
 .main-header.negative .navbar-toggler[aria-expanded='false'] .navbar-toggler-icon>div::after {
     background-color: #000000;
+}
+
+.main-header.negative.scrolling .navbar-toggler[aria-expanded='false'] .navbar-toggler-icon>div {
+    background-color: #ffffff;
+}
+
+.main-header.negative.scrolling .navbar-toggler[aria-expanded='false'] .navbar-toggler-icon>div::before,
+.main-header.negative.scrolling .navbar-toggler[aria-expanded='false'] .navbar-toggler-icon>div::after {
+    background-color: #ffffff;
 }
 
 .main-header .navbar-toggler {
@@ -945,6 +956,10 @@ section.page #scene-page .waves-right {
     }
 }
 
+.main-header .navbar-nav li.select-lang .dropdown-toggle>img:not(.active) {
+    display: none;
+}
+
 .main-header .navbar-nav li.select-lang .dropdown-menu {
     background-color: transparent;
     border: 0;
@@ -1001,10 +1016,14 @@ section.page #scene-page .waves-right {
 }
 
 .main-header .navbar-nav li.select-lang .dropdown-menu .dropdown-item {
-    display: block;
+    display: none;
     padding-left: 0;
     text-transform: uppercase;
     background-color: transparent;
+}
+
+.main-header .navbar-nav li.select-lang .dropdown-menu .dropdown-item:not(.active) {
+    display: block;
 }
 
 .main-header .navbar-nav li.select-lang .dropdown-menu .dropdown-item:hover {
@@ -4404,6 +4423,10 @@ section.equip {
     }
 }
 
+section.equip .row.page-title h2 {
+    text-shadow: none;
+}
+
 section.equip .row.page-title p {
     margin: 0 auto;
 }
@@ -4458,6 +4481,12 @@ section.equip .member {
 @media (min-width: 1280px) {
     section.equip .member {
         padding: 0 4rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    section.equip .member {
+        padding: 0 3rem;
     }
 }
 
@@ -5011,9 +5040,6 @@ section.inovation-team-pillars section.pillars #scene-pillars .img {
 section.inovation-team-pillars section.pillars #scene-pillars .dots-left {
     width: 28rem;
     height: 100%;
-    background-image: url("https://dev1.riomarca.com/clientes/gavea/images/dots-blue-white.svg");
-    background-size: 100%;
-    background-repeat: repeat-y;
     left: -18rem !important;
 }
 
@@ -5021,6 +5047,15 @@ section.inovation-team-pillars section.pillars #scene-pillars .dots-left {
     section.inovation-team-pillars section.pillars #scene-pillars .dots-left {
         left: -10rem !important;
     }
+}
+
+section.inovation-team-pillars section.pillars #scene-pillars .dots-left>div {
+    width: 100%;
+    height: 50%;
+    background-image: url("https://dev1.riomarca.com/clientes/gavea/images/dots-blue-white.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 1.5rem;
 }
 
 section.inovation-team-pillars section.pillars #scene-pillars .waves-right {
@@ -5157,24 +5192,6 @@ section.inovation-team-pillars section.pillars .div-pillars .owl-dots .owl-dot.a
     background-color: #FFCE1F;
 }
 
-.inovation-team-pillars .inovation {
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
-}
-
-.inovation-team-pillars .team {
-    -webkit-box-ordinal-group: 1;
-    -ms-flex-order: 0;
-    order: 0;
-}
-
-.inovation-team-pillars .pillars {
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
-}
-
 section.hero_careers {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5253,7 +5270,7 @@ section.hero_careers .bg::after {
 section.hero_careers h2 {
     color: #ffffff;
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 section.hero_careers h2 span {
@@ -5299,14 +5316,17 @@ section.hero_careers h2 span {
 section.hero_careers h6 {
     color: #ffffff;
     font-family: 'Karla';
-    font-weight: 400;
+    font-weight: 300;
     font-size: 2rem;
+    margin-top: 2rem;
     margin-bottom: 4rem;
+    max-width: 31rem;
 }
 
 @media (min-width: 768px) {
     section.hero_careers h6 {
         font-size: 2.5rem;
+        max-width: 86rem;
     }
 }
 
@@ -5319,13 +5339,14 @@ section.hero_careers h6 {
 @media (min-width: 1366px) {
     section.hero_careers h6 {
         font-size: 3rem;
+        max-width: 82rem;
     }
 }
 
 section.hero_careers a.vem {
     border-bottom: 0.3rem solid #ffffff;
     color: #ffffff;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 2rem;
     padding-bottom: 2.1rem;
     display: -webkit-box;
@@ -5470,8 +5491,21 @@ section.download h3 {
     }
 }
 
-section.download h3 span:not(.change-text) {
+section.download h3 span:last-of-type {
     color: #FF6900;
+}
+
+section.download h3 .device-desk {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    section.download h3 .device-mobile {
+        display: none;
+    }
+    section.download h3 .device-desk {
+        display: initial;
+    }
 }
 
 section.download .download_buttons-mobile {
@@ -5647,29 +5681,6 @@ section.download .download-img #scene_download img {
     section.download .download-img #scene_download img {
         right: -2rem;
     }
-}
-
-section.download .rights {
-    display: none;
-}
-
-@media (min-width: 1024px) {
-    section.download .rights {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-}
-
-section.download .rights p,
-section.download .rights a {
-    color: #ffffff;
-    font-size: 1.2rem;
 }
 
 section.download .others-plataforms {
@@ -5957,16 +5968,33 @@ section.profile section.home-broker .hb-desktop {
     }
 }
 
+@media (min-width: 1536px) {
+    section.profile section.home-broker .hb-desktop {
+        width: 120rem;
+        -webkit-transform: translateX(-1.3rem);
+        transform: translateX(-1.3rem);
+    }
+}
+
+@media (min-width: 1920px) {
+    section.profile section.home-broker .hb-desktop {
+        width: 125rem;
+        -webkit-transform: translateX(-6rem);
+        transform: translateX(-6rem);
+    }
+}
+
 section.profile section.home-broker .buys {
     -webkit-transform: translateX(-5.5rem);
     transform: translateX(-5.5rem);
     bottom: 3rem;
+    width: 80rem;
 }
 
 @media (min-width: 1024px) {
     section.profile section.home-broker .buys {
-        -webkit-transform: translateX(-13rem);
-        transform: translateX(-13rem);
+        -webkit-transform: translateX(-13.8rem);
+        transform: translateX(-13.8rem);
     }
 }
 
@@ -5979,15 +6007,22 @@ section.profile section.home-broker .buys {
 
 @media (min-width: 1366px) {
     section.profile section.home-broker .buys {
-        -webkit-transform: translateX(-15.5rem);
-        transform: translateX(-15.5rem);
+        -webkit-transform: translateX(-15.6rem);
+        transform: translateX(-15.6rem);
     }
 }
 
-@media (min-width: 1850px) {
+@media (min-width: 1536px) {
     section.profile section.home-broker .buys {
-        -webkit-transform: translateX(-17.4rem);
-        transform: translateX(-17.4rem);
+        -webkit-transform: translateX(-14.4rem);
+        transform: translateX(-14.4rem);
+    }
+}
+
+@media (min-width: 1920px) {
+    section.profile section.home-broker .buys {
+        -webkit-transform: translateX(-19.4rem);
+        transform: translateX(-19.4rem);
     }
 }
 
@@ -5997,7 +6032,7 @@ section.profile section.home-broker .buys img {
 
 @media (min-width: 1024px) {
     section.profile section.home-broker .buys img {
-        width: 14rem;
+        width: 14.9rem;
     }
 }
 
@@ -6007,9 +6042,21 @@ section.profile section.home-broker .buys img {
     }
 }
 
-@media (min-width: 1850px) {
+@media (min-width: 1366px) {
     section.profile section.home-broker .buys img {
-        width: 20rem;
+        width: 18.2rem;
+    }
+}
+
+@media (min-width: 1536px) {
+    section.profile section.home-broker .buys img {
+        width: 22.3rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    section.profile section.home-broker .buys img {
+        width: 23.1rem;
     }
 }
 
@@ -6030,26 +6077,47 @@ section.profile section.home-broker #scene_broker img {
     }
 }
 
-section.profile section.functionalities h6 {
-    text-align: center;
+section.profile section.home-broker .broker-img {
+    padding-top: 0;
 }
 
 @media (min-width: 1280px) {
-    section.profile section.functionalities h6 {
-        font-size: 2.2rem;
+    section.profile section.home-broker .broker-img {
+        -webkit-transform: scale(0.82) translateX(-14rem);
+        transform: scale(0.82) translateX(-14rem);
     }
 }
 
 @media (min-width: 1366px) {
-    section.profile section.functionalities h6 {
-        font-size: 2.5rem;
+    section.profile section.home-broker .broker-img {
+        -webkit-transform: scale(0.9) translateX(-4rem);
+        transform: scale(0.9) translateX(-4rem);
     }
 }
 
 @media (min-width: 1366px) {
-    section.profile section.functionalities h6 {
-        font-size: 2.5rem;
+    section.profile section.home-broker .broker-img {
+        -webkit-transform: scale(0.9) translateX(-4rem);
+        transform: scale(0.9) translateX(-4rem);
     }
+}
+
+@media (min-width: 1920px) {
+    section.profile section.home-broker .broker-img {
+        -webkit-transform: scale(1) translateX(12rem);
+        transform: scale(1) translateX(12rem);
+    }
+}
+
+@media (min-width: 1850px) {
+    section.profile section.functionalities {
+        max-width: initial;
+        padding: 0 7rem;
+    }
+}
+
+section.profile section.functionalities h6 {
+    text-align: center;
 }
 
 section.profile section.functionalities .btn-group {
@@ -6094,6 +6162,7 @@ section.profile section.functionalities .btn-group .btn {
     transition: background-color .3s ease;
 }
 
+section.profile section.functionalities .btn-group .btn.active,
 section.profile section.functionalities .btn-group .btn:hover {
     color: #3477A7;
     border-color: #3477A7;
@@ -6119,6 +6188,7 @@ section.profile section.functionalities .owl-functionalities_carousel {
 
 section.profile section.functionalities .owl-functionalities_carousel .owl-dots {
     margin-top: 8rem !important;
+    pointer-events: none;
 }
 
 section.profile section.functionalities .owl-functionalities_carousel .owl-dots .owl-dot span {

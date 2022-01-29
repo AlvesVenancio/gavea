@@ -66,24 +66,38 @@
             transform: translateX(0rem);
         }
         @media (min-width: 1200px) {
-            & {
-                position: initial;
-                height: initial;
-                width: initial;
-                background-color: initial;
-                text-align: initial;
-                padding-top: 0;
-                justify-content: center;
-            }
+            transform: none;
+            position: initial;
+            height: initial;
+            width: initial;
+            background-color: initial;
+            text-align: initial;
+            padding-top: 0;
+            justify-content: center;
         }
     }
-    &.negative .navbar-toggler[aria-expanded='false'] {
-        .navbar-toggler-icon {
-            >div {
-                background-color: $color-black;
-                &::before,
-                &::after {
+    &.negative {
+        .navbar-toggler[aria-expanded='false'] {
+            .navbar-toggler-icon {
+                >div {
                     background-color: $color-black;
+                    &::before,
+                    &::after {
+                        background-color: $color-black;
+                    }
+                }
+            }
+        }
+        &.scrolling {
+            .navbar-toggler[aria-expanded='false'] {
+                .navbar-toggler-icon {
+                    >div {
+                        background-color: $color-white;
+                        &::before,
+                        &::after {
+                            background-color: $color-white;
+                        }
+                    }
                 }
             }
         }
@@ -257,6 +271,9 @@
                     @media (min-width: 1200px) {
                         display: flex;
                     }
+                    >img:not(.active) {
+                        display: none;
+                    }
                 }
                 .dropdown-menu {
                     background-color: transparent;
@@ -293,10 +310,13 @@
                         }
                     }
                     .dropdown-item {
-                        display: block;
+                        display: none;
                         padding-left: 0;
                         text-transform: uppercase;
                         background-color: transparent;
+                        &:not(.active) {
+                            display: block;
+                        }
                         &:hover {
                             background-color: transparent;
                         }

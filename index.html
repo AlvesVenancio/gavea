@@ -67,17 +67,17 @@
                                     </li>
                                     <li class="dropdown select-lang nav-item">
                                         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <img class="pt-br" src="https://dev1.riomarca.com/clientes/gavea/images/pt-br.png" alt="">
-                                            <img class="en" src="https://dev1.riomarca.com/clientes/gavea/images/en.png" alt="">
+                                            <img class="active" src="https://dev1.riomarca.com/clientes/gavea/images/pt-br.png" alt="">
+                                            <img class="" src="https://dev1.riomarca.com/clientes/gavea/images/en.png" alt="">
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                            <li class="en dropdown-item nav-link" onclick="$('html').attr('lang', 'pt-br');">
+                                            <li class="active dropdown-item nav-link">
                                                 <figure>
                                                     <img src="https://dev1.riomarca.com/clientes/gavea/images/pt-br.png" alt="">
                                                     <figcaption>pt-br</figcaption>
                                                 </figure>
                                             </li>
-                                            <li class="pt-br dropdown-item nav-link" onclick="$('html').attr('lang', 'en');">
+                                            <li class="dropdown-item nav-link">
                                                 <figure>
                                                     <img src="https://dev1.riomarca.com/clientes/gavea/images/en.png" alt="">
                                                     <figcaption>en</figcaption>
@@ -375,8 +375,7 @@
     <section class="e-silo" id="e-silo">
         <div class="row sustainability">
             <div class="video">
-                <video class="en" src="https://dev1.riomarca.com/clientes/gavea/videos/gavea_video_eng.mp4" autoplay="true" loop="true"></video>
-                <video class="pt-br" src="https://dev1.riomarca.com/clientes/gavea/videos/gavea_video_port.mp4" autoplay="true" loop="true"></video>
+                <video src="https://dev1.riomarca.com/clientes/gavea/videos/gavea_video_port.mp4" autoplay loop muted></video>
             </div>
             <div class="row section-container">
                 <div class="section-default_text col-12 col-lg-6">
@@ -850,7 +849,6 @@
                 if ($(this).hasClass('collapsed')) {
                     enableScroll();
                 } else {
-                    // $("html, body").animate({ scrollTop: 0 }, "slow");
                     disableScroll();
                 }
             });

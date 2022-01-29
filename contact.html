@@ -48,7 +48,7 @@
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav">
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                                        <a class="nav-link" aria-current="page" href="index.html">Início</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" aria-current="page" href="index.html#bolsa">Bolsa</a>
@@ -63,29 +63,25 @@
                                         <a class="nav-link" aria-current="page" href="#">Blog</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="contact.html">Contato</a>
+                                        <a class="nav-link active" aria-current="page" href="contact.html">Contato</a>
                                     </li>
                                     <li class="dropdown select-lang nav-item">
                                         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <img class="pt-br" src="https://dev1.riomarca.com/clientes/gavea/images/pt-br.png" alt="">
-                                            <img class="en" src="https://dev1.riomarca.com/clientes/gavea/images/en.png" alt="">
+                                            <img class="active" src="https://dev1.riomarca.com/clientes/gavea/images/pt-br.png" alt="">
+                                            <img class="" src="https://dev1.riomarca.com/clientes/gavea/images/en.png" alt="">
                                         </a>
                                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                            <li>
-                                                <a class="en dropdown-item nav-link" href="#" onclick="$('html').attr('lang', 'pt-br');">
-                                                    <figure>
-                                                        <img src="https://dev1.riomarca.com/clientes/gavea/images/pt-br.png" alt="">
-                                                        <figcaption>pt-br</figcaption>
-                                                    </figure>
-                                                </a>
+                                            <li class="active dropdown-item nav-link">
+                                                <figure>
+                                                    <img src="https://dev1.riomarca.com/clientes/gavea/images/pt-br.png" alt="">
+                                                    <figcaption>pt-br</figcaption>
+                                                </figure>
                                             </li>
-                                            <li>
-                                                <a class="pt-br dropdown-item nav-link" href="#" onclick="$('html').attr('lang', 'en');">
-                                                    <figure>
-                                                        <img src="https://dev1.riomarca.com/clientes/gavea/images/en.png" alt="">
-                                                        <figcaption>en</figcaption>
-                                                    </figure>
-                                                </a>
+                                            <li class="dropdown-item nav-link">
+                                                <figure>
+                                                    <img src="https://dev1.riomarca.com/clientes/gavea/images/en.png" alt="">
+                                                    <figcaption>en</figcaption>
+                                                </figure>
                                             </li>
                                         </ul>
                                     </li>
@@ -142,9 +138,12 @@
 
                             <select id="Subject" aria-label="Subject" class="form-select" data-aos-anchor=".form-contact" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
                                 <option selected disabled>Assunto</option>
-                                <option value="1">Assunto Um</option>
-                                <option value="2">Assunto Dois</option>
-                                <option value="3">Assunto Três</option>
+                                <option value="1">Agendar uma demostração</option>
+                                <option value="2">Parcerias</option>
+                                <option value="3">Investidores</option>
+                                <option value="4">Mídia</option>
+                                <option value="5">Quero fazer parte do time</option>
+                                <option value="6">Outros</option>
                             </select>
                         </div>
 
@@ -551,9 +550,6 @@
                 if ($(this).hasClass('collapsed')) {
                     enableScroll();
                 } else {
-                    $("html, body").animate({
-                        scrollTop: 0
-                    }, "slow");
                     disableScroll();
                 }
             });

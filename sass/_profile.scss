@@ -1,7 +1,5 @@
 section.profile {
-
     padding-top: 15rem;
-    
     @media (min-width: 1024px) {
         padding-top: 18rem;
     }
@@ -11,16 +9,13 @@ section.profile {
     @media (min-width: 1850px) {
         padding-top: 27rem;
     }
-    
     #scene-page {
-
         position: absolute !important;
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
         z-index: -9;
-
         .waves-left {
             position: absolute !important;
             left: initial !important;
@@ -28,15 +23,12 @@ section.profile {
             top: -2rem !important;
         }
     }
-
     section.home-broker {
-
         padding: 0;
         padding-bottom: 10rem;
         @media (min-width: 1850px) {
             padding-bottom: 18rem;
         }
-        
         h3 {
             color: #092A34;
             font-size: 5rem;
@@ -44,7 +36,6 @@ section.profile {
             margin-bottom: 4rem;
             line-height: 5.5rem;
             letter-spacing: -0.03em;
-            
             @media (min-width: 1024px) {
                 font-size: 5.5rem;
             }
@@ -58,17 +49,13 @@ section.profile {
                 font-size: 8.5rem;
                 line-height: .9em;
             }
-    
             span {
                 color: $color-orange;
             }
-    
         }
-
         p {
             text-align: left;
             font-size: 1.8rem;
-
             @media (min-width: 1366px) {
                 font-size: 2rem;
             }
@@ -76,39 +63,32 @@ section.profile {
                 font-size: 2.2rem;
             }
         }
-
         .btns {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 1rem;
-            
             @media (min-width: 414px) {
                 justify-content: flex-start;
                 gap: 2rem;
             }
-
             .btn {
                 margin-right: 0;
             }
-
             .btn-contact-us {
                 background-color: transparent;
                 color: $color-gray1;
                 display: flex;
                 width: fit-content;
-                align-items:center;
+                align-items: center;
                 position: relative;
                 transition: border-color .3s ease;
-
                 &:hover {
                     color: $color-orange;
-
                     &::after {
                         border-left: 0.6rem solid $color-orange;
                     }
                 }
-                
                 &::after {
                     content: '';
                     margin-left: 1rem;
@@ -119,82 +99,94 @@ section.profile {
                 }
             }
         }
-
         .hb-desktop {
             transform: translateX(0rem);
             @media (min-width: 1024px) {
                 transform: translateX(-5rem);
             }
+            @media (min-width: 1536px) {
+                width: 120rem;
+                transform: translateX(-1.3rem);
+            }
+            @media (min-width: 1920px) {
+                width: 125rem;
+                transform: translateX(-6rem);
+            }
         }
-
         .buys {
-            
             transform: translateX(-5.5rem);
             bottom: 3rem;
-            
+            width: 80rem;
             @media (min-width: 1024px) {
-                transform: translateX(-13rem);
+                transform: translateX(-13.8rem);
             }
             @media (min-width: 1280px) {
                 transform: translateX(-15.7rem);
             }
             @media (min-width: 1366px) {
-                transform: translateX(-15.5rem);
+                transform: translateX(-15.6rem);
             }
-            @media (min-width: 1850px) {
-                transform: translateX(-17.4rem);
+            @media (min-width: 1536px) {
+                transform: translateX(-14.4rem);
             }
-
+            @media (min-width: 1920px) {
+                transform: translateX(-19.4rem);
+            }
             img {
                 width: 10.2rem;
-
                 @media (min-width: 1024px) {
-                    width: 14rem;
+                    width: 14.9rem;
                 }
                 @media (min-width: 1280px) {
                     width: 18rem;
                 }
-                @media (min-width: 1850px) {
-                    width: 20rem;
+                @media (min-width: 1366px) {
+                    width: 18.2rem;
+                }
+                @media (min-width: 1536px) {
+                    width: 22.3rem;
+                }
+                @media (min-width: 1920px) {
+                    width: 23.1rem;
                 }
             }
         }
-
         #scene_broker {
             img {
-
                 top: 13rem !important;
                 left: 19rem !important;
-                
                 @media (min-width: 1024px) {
                     left: 0rem !important;
                 }
-
                 @media (min-width: 1366px) {
                     left: -5rem !important;
                 }
             }
         }
-    }
-
-    section.functionalities {
-        
-        h6 {
-            text-align: center;
-    
+        .broker-img {
+            padding-top: 0;
             @media (min-width: 1280px) {
-                font-size: 2.2rem;
+                transform: scale(.82) translateX(-14rem);
             }
-    
             @media (min-width: 1366px) {
-                font-size: 2.5rem;
+                transform: scale(.9) translateX(-4rem);
             }
-            
             @media (min-width: 1366px) {
-                font-size: 2.5rem;
+                transform: scale(.9) translateX(-4rem);
+            }
+            @media (min-width: 1920px) {
+                transform: scale(1) translateX(12rem);
             }
         }
-
+    }
+    section.functionalities {
+        @media (min-width: 1850px) {
+            max-width: initial;
+            padding: 0 7rem;
+        }
+        h6 {
+            text-align: center;
+        }
         .btn-group {
             display: flex;
             flex-wrap: wrap;
@@ -202,12 +194,10 @@ section.profile {
             max-width: 32rem;
             margin: 0 auto;
             margin-top: 3rem;
-            
-            @media (min-width: 768px){
+            @media (min-width: 768px) {
                 max-width: initial;
                 justify-content: center;
             }
-
             .btn {
                 font-family: 'Inter';
                 font-size: 1.6rem;
@@ -218,9 +208,9 @@ section.profile {
                 border: .1rem solid #D2E3EF;
                 display: flex;
                 max-width: fit-content;
-                align-items:center;
+                align-items: center;
                 transition: background-color .3s ease;
-
+                &.active,
                 &:hover {
                     color: #3477A7;
                     border-color: #3477A7;
@@ -228,24 +218,19 @@ section.profile {
                 }
             }
         }
-
         .owl-functionalities_carousel {
-        
             margin-top: 6rem;
             margin-bottom: 10rem;
-            
             @media (min-width: 1280px) {
                 margin-bottom: 13rem;
             }
             @media (min-width: 1850px) {
                 margin-bottom: 14.5rem;
             }
-    
             .owl-dots {
                 margin-top: 8rem !important;
-    
+                pointer-events: none;
                 .owl-dot {
-    
                     span {
                         width: 1rem;
                         height: .5rem;
@@ -262,40 +247,31 @@ section.profile {
             }
         }
     }
-
     section.others-profiles {
-        
         margin-bottom: 11rem;
-
         h6 {
             text-align: center;
             margin-bottom: 3rem;
-    
             @media (min-width: 1280px) {
                 font-size: 2.2rem;
             }
-    
             @media (min-width: 1366px) {
                 font-size: 2.5rem;
             }
-            
             @media (min-width: 1366px) {
                 font-size: 2.5rem;
             }
         }
-
         .btn-group {
             display: flex;
             flex-wrap: wrap;
             gap: 2rem;
             max-width: 32rem;
             margin: 0 auto;
-            
-            @media (min-width: 768px){
+            @media (min-width: 768px) {
                 max-width: initial;
                 justify-content: center;
             }
-
             .btn {
                 font-family: 'Inter';
                 font-size: 1.5rem;
@@ -305,13 +281,11 @@ section.profile {
                 border: .1rem solid #D2E3EF;
                 display: flex;
                 max-width: fit-content;
-                align-items:center;
+                align-items: center;
                 transition: background-color .3s ease;
-
                 &:hover {
                     background-color: #D2E3EF;
                 }
-
                 &::after {
                     content: '';
                     margin-left: 1.8rem;
