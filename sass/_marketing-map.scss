@@ -1,48 +1,37 @@
 .marketing-map {
-
     overflow-x: hidden;
     margin-bottom: 6rem;
-    
     @media (min-width: 1850px) {
         overflow-x: initial;
     }
-
     .marketing-img {
-        
         margin-bottom: 5rem;
         position: relative;
         padding-top: 4rem;
-        
         @media (min-width: 768px) {
             padding-top: 6rem;
             min-height: 35rem;
         }
-        
         @media (min-width: 1024px) {
             padding-top: 9rem;
             min-height: 45rem;
         }
-
         @media (min-width: 1280px) {
             padding-top: 20rem;
             min-height: 65rem;
         }
-        
         @media (min-width: 1366px) {
             padding-top: 20rem;
             min-height: 65rem;
         }
-        
         @media (min-width: 1536px) {
             padding-top: 30rem;
             min-height: 82rem;
         }
-
         @media (min-width: 1850px) {
             padding-top: 35rem;
             min-height: 89rem;
         }
-        
         &::after {
             content: '';
             height: 90%;
@@ -53,236 +42,77 @@
             transform: translateX(-50%);
             z-index: -9;
             background-color: #F5F8FA;
-            
             @media (min-width: 768px) {
                 width: 50vw;
                 transform: translateX(0);
                 left: 12rem;
             }
-            
             @media (min-width: 1280px) {
                 left: 15rem;
             }
-            
             @media (min-width: 1400px) {
                 width: 62vw;
                 left: 18rem;
             }
-
             @media (min-width: 1850px) {
                 left: 25rem;
             }
-
-
         }
-        
         @media (min-width: 768px) {
             padding-left: 4rem;
             padding-right: 4rem;
         }
-        
         @media (min-width: 1536px) {
             padding-left: 5rem;
             padding-right: 5rem;
         }
-        
         .map {
             width: 26.4rem;
             z-index: 9;
             margin: 0 auto;
             position: relative;
-            
             @media (min-width: 768px) {
                 transform: scale(1.3);
             }
-
             @media (min-width: 1024px) {
                 transform: scale(1.5);
             }
-
             @media (min-width: 1280px) {
                 transform: scale(2.35);
             }
-
             @media (min-width: 1366px) {
                 transform: scale(2.5);
             }
-
             @media (min-width: 1536px) {
                 transform: scale(3);
             }
-            
             @media (min-width: 1850px) {
                 transform: scale(3.35);
             }
-
-            > img {
+            >img {
                 width: 100%;
             }
-            
-            .points > img {
+            .points>img {
                 width: 100%;
             }
-
-            .points, .tokens {
+            .points,
+            .tokens {
                 position: absolute;
                 left: 0;
                 top: 0;
                 width: 100%;
                 height: 100%;
             }
-
             .tokens {
                 .token {
                     width: 11.3rem;
                     height: 2.3rem;
-                    background-color: $color-white;
-                    border-radius: 3rem;
-                    box-shadow: 0 1rem 1rem #00000020;
-                    padding: .19rem .3rem;
                     position: absolute;
                     transform: scale(.9);
-
-                    &::after {
-                        content: '';
-                        width: .4rem;
-                        height: .4rem;
-                        border-radius: 0.06rem;
-                        position: absolute;
-                        left: 50%;
-                        bottom: -.2rem;
-                        transform: translateX(-50%) rotate(45deg);
-                        background-color: white;
-                    }
-
-                    div.icon {
-                        border-radius: 100%;
-                        width: 1.9rem;
-                        height: 1.9rem;
-                        background-image: url('https://dev1.riomarca.com/clientes/gavea/images/icon-soy_down.png');
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        background-size: contain;
-                        
-                        &.corn-icon {
-                            background-image: url('https://dev1.riomarca.com/clientes/gavea/images/icon-corn_down.png');
-                        }
-
-                        img {
-                            max-width: 100%;
-                        }
-                    }
-
-                    > div {
-                        position: absolute;
-                        width: 100%;
-                        display: flex;
-                        align-items: center;
-                        gap: .3rem;
-
-                        .content {
-
-                            div {
-                                display: flex;
-                                align-items: flex-end;
-                                gap: .2rem;
-                                padding-left: .2rem;
-                                position: relative;
-
-                                span {
-                                    font-size: .8rem;
-                                    font-weight: 700;
-                                    line-height: .5rem;
-                                    color: #47595F;
-                                }
-
-                                small {
-                                    font-size: .3rem;
-                                    font-weight: 600;
-                                    line-height: .1rem;
-                                    color: $color-gray2;
-                                }
-                            }
-
-                            .ton {
-                                color: #47595F;
-                                padding-left: 0;
-                                padding-right: .5rem;
-                                position: relative;
-
-                                &::after {
-                                    content: '';
-                                    width: .1rem;
-                                    height: .7rem;
-                                    background-color: #D2E3EF;
-                                    position: absolute;
-                                    bottom: 0;
-                                    right: 0;
-                                    transform: translateX(.1rem);
-                                }
-                            }
-                        }
-
-                        .number {
-                            margin-top: .1rem;
-                        }
-                        .info {
-                            margin-top: .2rem;
-                            gap: .15rem !important;
-                            font-size: .3rem;
-                            color: #5998C5;
-
-                            > div {
-                                background-color: $color-white;
-                                // border: .028rem solid #D2E3EF00;
-                                // border-radius: 10rem;
-                                background-image: url('https://dev1.riomarca.com/clientes/gavea/images/token-info_border.svg');
-                                background-size: 100% 95%;
-                                background-position: center;
-                                background-repeat: no-repeat;
-                                min-width: 1.6rem;
-                                min-height: .5rem;
-                                text-align: center;
-                                line-height: .3em;
-                                padding: .15rem .25rem;
-                            }
-                        }
-                    }
-
-                    &[data-updown='up'] {
-                        div.icon {
-
-                            background-image: url('https://dev1.riomarca.com/clientes/gavea/images/icon-soy_up.png');
-                            
-                            &.corn-icon {
-                                background-image: url('https://dev1.riomarca.com/clientes/gavea/images/icon-corn_up.png');
-                            }
-                            
-                            img {
-                                opacity: 0;
-                            }
-
-
-                        }
-                        .money {
-                            span{
-                                color: #06A75C;
-                            }
-                        }
-                    }
-
-                    &[data-updown='down'] {
-                        div.icon {
-                            box-shadow: -.083rem .083rem .27rem #6C7F8B66;
-                        }
-                        .money {
-                            span {
-                                color: #FF3A3A;
-                            }
-                        }
+                    img {
+                        max-width: 111%;
                     }
                 }
-
                 //position each token
                 #amazonas1 {
                     left: 2.8%;
@@ -315,39 +145,30 @@
             }
         }
     }
-
     .section-default_text {
-        
         h2 {
-
             max-width: 30rem;
             margin-left: auto;
             margin-right: auto;
-            
             @media (min-width: 768px) {
                 max-width: 26rem;
                 margin-left: 0;
                 margin-right: 0;
             }
-    
             @media (min-width: 1366px) {
                 max-width: 35rem;
             }
-    
             @media (min-width: 1850px) {
                 max-width: 60rem;
             }
         }
-        
         p {
             @media (min-width: 768px) {
                 max-width: 32rem;
             }
-    
             @media (min-width: 1280px) {
                 max-width: 41.5rem;
             }
-    
             @media (min-width: 1850px) {
                 max-width: 43rem;
             }

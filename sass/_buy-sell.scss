@@ -1,5 +1,4 @@
 section.buy-sell {
-
     position: relative;
     overflow: hidden;
     @media (min-width: 1850px) {
@@ -8,33 +7,26 @@ section.buy-sell {
         background-repeat: no-repeat;
         background-position: right top;
     }
-
     .section-container {
         padding-left: 0;
         padding-right: 0;
     }
-
     .buy-sell_img {
-        
         min-height: 46rem;
-        
         background-image: url('https://dev1.riomarca.com/clientes/gavea/images/buy-sell.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-
         @media (min-width: 768px) {
             padding-right: 4rem;
             padding-top: 5rem;
             padding-bottom: 5rem;
             background-image: cover;
         }
-        
         @media (min-width: 1536px) {
             padding-right: 5rem;
             min-height: 49rem;
         }
-        
         @media (min-width: 1850px) {
             padding-right: 0;
             padding-top: 15rem;
@@ -43,83 +35,61 @@ section.buy-sell {
             min-height: 60rem;
         }
     }
-
     .section-default_text {
         padding-left: 2.8rem;
         padding-top: 4rem;
         padding-bottom: 7.5rem;
         // background-color: $color-white;
-        
         @media (min-width: 768px) {
             padding-left: 4rem;
         }
-        
         @media (min-width: 1536px) {
             padding-left: 5rem;
         }
-        
         @media (min-width: 1850px) {
             padding-left: 0;
         }
-        
         h2 {
-            
             @media (min-width: 768px) {
                 max-width: 30rem;
             }
-            
             @media (min-width: 1280px) {
                 max-width: 25rem;
             }
-
             @media (min-width: 1366px) {
                 max-width: 40rem;
             }
-            
             @media (min-width: 1850px) {
                 max-width: 45rem;
             }
         }
     }
-    
     .buy-sell_pattern {
-
-        
         @media (min-width: 768px) {
-            
             height: 26rem;
             background-image: url('https://dev1.riomarca.com/clientes/gavea/images/buy_sell_bottom.png');
             background-repeat: no-repeat;
             background-size: 40vw;
             background-position: 10vw top;
         }
-        
         @media (min-width: 1024px) {
             height: 30rem;
         }
-        
         @media (min-width: 1366px) {
             background-size: 36rem;
             background-position: calc(50vw - 36rem) top;
         }
-        
         @media (min-width: 1850px) {
             height: 30rem;
             background-size: 36rem;
             background-position: calc(660px - 36rem) top;
         }
-
         .col-12 {
-            
             @media (min-width: 768px) {
-                
                 position: relative;
-                
             }
-            
             #scene3 {
                 @media (min-width: 768px) {
-                    
                     position: absolute;
                     left: 50%;
                     top: 0;
@@ -128,16 +98,13 @@ section.buy-sell {
                     z-index: -9;
                     overflow: hidden;
                     max-height: 26rem;
-                    
                     img.dots {
                         width: 100%;
                     }
                 }
-                
                 @media (min-width: 1024px) {
                     max-height: 30rem;
                 }
-
                 @media (min-width: 1366px) {
                     img.dots {
                         max-height: 30rem;
@@ -150,7 +117,6 @@ section.buy-sell {
             }
         }
     }
-
     #scene4 {
         position: absolute !important;
         bottom: 0;
@@ -159,144 +125,111 @@ section.buy-sell {
         height: 100rem;
         z-index: -9;
         // display: none !important;
-
         img {
             position: absolute !important;
             left: unset !important;
             top: unset !important;
         }
-        
         .buy-sell_waves_img1 {
             right: -5rem;
             bottom: 0;
             max-height: 60rem;
-            
             @media (min-width: 768px) {
                 max-height: 92rem;
             }
-            
             @media (min-width: 1280px) {
                 right: -1rem;
                 max-height: 58rem;
             }
-
             @media (min-width: 1366px) {
                 right: 0rem;
                 max-height: 58rem;
             }
-
             @media (min-width: 1536px) {
                 right: 2rem;
                 max-height: 58rem;
             }
         }
-        
         .buy-sell_waves_img2 {
-
             @media (min-width: 768px) {
                 left: -10rem !important;
                 top: -12rem !important;
                 height: 70rem;
             }
-
             @media (min-width: 1024px) {
                 top: 20rem !important;
                 max-height: 55rem;
             }
-            
             @media (min-width: 1536px) {
                 top: 15rem !important;
             }
-            
             @media (min-width: 1850px) {
                 top: -10rem !important;
                 left: -15rem !important;
                 max-height: 65rem;
             }
         }
-        
         .buy-sell_waves_img3 {
-            
             @media (min-width: 768px) {
                 left: -4rem !important;
                 bottom: 10rem;
                 height: 30rem;
             }
-            
             @media (min-width: 1024px) {
                 left: -6rem !important;
             }
-            
             @media (min-width: 1536px) {
                 left: -2rem !important;
                 height: 45rem;
             }
-            
             @media (min-width: 1850px) {
                 left: -10rem !important;
             }
         }
     }
-
     .buy-sell_counter {
-
         padding: 7rem 0;
-        
         ul {
-            
             @media (min-width: 1024px) {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 gap: 5%;
             }
-            
             @media (min-width: 1536px) {
                 gap: 7%;
             }
-
             @media (min-width: 1850px) {
                 gap: 10%;
             }
-
             li {
-                
                 text-align: center;
-
                 h6 {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     flex-direction: row;
                     gap: 0;
-
                     color: $color-orange;
                     font-size: 7rem;
                     font-weight: 700;
-                    
                     @media (min-width: 1280px) {
                         font-size: 8rem;
                     }
-
                     @media (min-width: 1536px) {
                         font-size: 9rem;
                     }
                 }
-
                 p {
                     font-family: "Inter", "Open Sans", "Sans-serif";
                     font-size: 1.8rem;
                     color: $color-gray1;
                     max-width: 23rem;
                     margin: 0 auto;
-                    
                     @media (min-width: 1024px) {
-                        
                         max-width: 18rem;
-                        
                     }
                 }
-                
                 &:first-child {
                     p {
                         max-width: 10rem;
