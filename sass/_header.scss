@@ -15,7 +15,42 @@
         margin: 0;
         padding-top: 1rem;
         padding-bottom: 1.2rem;
-        background-color: #01426a;
+        overflow: hidden;
+        @media (min-width: 1024px) {
+            padding-top: 2rem;
+            padding-bottom: 2.2rem;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 200%;
+            height: 200%;
+            background-color: #ffffffE6;
+            z-index: -9;
+            // filter: blur(2.4rem);
+        }
+        .logo {
+            img {
+                opacity: 0;
+            }
+            position: relative;
+            &::before {
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-image: url('http://127.0.0.1:5500/images/logo-gavea-blue.png');
+                background-repeat: no-repeat;
+                background-size: auto 100%;
+                //this left follow the padding-left for col's of bootstrap
+                background-position: calc(var(--bs-gutter-x) * .5) top;
+            }
+        }
     }
     &.negative {
         .logo {
@@ -30,21 +65,11 @@
                 position: absolute;
                 left: 0;
                 top: 0;
-                background-image: url('https://dev1.riomarca.com/clientes/gavea/images/logo-gavea-blue.png');
+                background-image: url('http://127.0.0.1:5500/images/logo-gavea-blue.png');
                 background-repeat: no-repeat;
                 background-size: auto 100%;
                 //this left follow the padding-left for col's of bootstrap
                 background-position: calc(var(--bs-gutter-x) * .5) top;
-            }
-        }
-        &.scrolling {
-            img {
-                opacity: 1;
-            }
-            .logo {
-                &::before {
-                    opacity: 0;
-                }
             }
         }
     }
@@ -152,7 +177,8 @@
             }
         }
     }
-    &.negative .navbar-nav {
+    &.negative .navbar-nav,
+    &.scrolling .navbar-nav {
         li {
             .nav-link {
                 @media (min-width: 1200px) {
@@ -366,7 +392,8 @@
             background-color: $color-orange;
         }
     }
-    &.negative .btn-login {
+    &.negative .btn-login,
+    &.scrolling .btn-login {
         background-color: $color-orange;
         &:hover {
             background-color: darken($color-orange, 10%)

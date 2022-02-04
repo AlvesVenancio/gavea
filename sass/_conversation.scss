@@ -4,13 +4,13 @@ section.conversation {
         padding-right: 0;
     }
     @media (min-width: 1850px) {
-        background-image: url('https://dev1.riomarca.com/clientes/gavea/images/conversation-people.png');
+        background-image: url('http://127.0.0.1:5500/images/conversation-people.png');
         background-size: 50%;
         background-repeat: no-repeat;
         background-position: left;
     }
     .conversation-img {
-        background-image: url('https://dev1.riomarca.com/clientes/gavea/images/conversation-people.png');
+        background-image: url('http://127.0.0.1:5500/images/conversation-people.png');
         background-size: contain;
         background-repeat: no-repeat;
         @media (min-width: 768px) {
