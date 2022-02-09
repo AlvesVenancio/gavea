@@ -113,15 +113,15 @@
                 }
             }
         }
-        &.scrolling {
-            .navbar-toggler[aria-expanded='false'] {
-                .navbar-toggler-icon {
-                    >div {
-                        background-color: $color-white;
-                        &::before,
-                        &::after {
-                            background-color: $color-white;
-                        }
+    }
+    &.scrolling {
+        .navbar-toggler[aria-expanded='false'] {
+            .navbar-toggler-icon {
+                >div {
+                    background-color: $color-black;
+                    &::before,
+                    &::after {
+                        background-color: $color-black;
                     }
                 }
             }

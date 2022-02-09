@@ -1,4 +1,8 @@
 section.conversation {
+    overflow: hidden;
+    @media (min-width: 768px) {
+        overflow: initial;
+    }
     .section-container {
         padding-left: 0;
         padding-right: 0;
